@@ -1,0 +1,2130 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    BR
+    NOT
+    PARENTHESE
+    STAR
+    UNKNOWN
+
+Grammar
+
+Rule 0     S' -> entries
+Rule 1     entries -> entry
+Rule 2     entries -> entry moreentries
+Rule 3     moreentries -> entry
+Rule 4     moreentries -> entry moreentries
+Rule 5     entry -> SP exp EP
+Rule 6     entry -> SP exps EP
+Rule 7     entry -> SBQ entries EBQ
+Rule 8     exps -> exp
+Rule 9     exps -> exp SEP moreexp
+Rule 10    moreexp -> exp
+Rule 11    moreexp -> exp SEP moreexp
+Rule 12    exp -> common_old
+Rule 13    exp -> common_new
+Rule 14    exp -> place
+Rule 15    exp -> descriptions
+Rule 16    exp -> person
+Rule 17    exp -> page
+Rule 18    exp -> voirs
+Rule 19    common_new -> SSTRONG words ESTRONG
+Rule 20    common_old -> word
+Rule 21    place -> SEM words EEM
+Rule 22    place -> SEM words EEM parenthese
+Rule 23    person -> SSC word ESC
+Rule 24    person -> SSC descriptions ESC
+Rule 25    person -> SSC word SEP word ESC
+Rule 26    person -> SSC word SEP descriptions ESC
+Rule 27    person -> SSC descriptions SEP word ESC
+Rule 28    cross -> SPA CROSS EPA
+Rule 29    title -> WORD SS WORD ES
+Rule 30    page -> numberminus
+Rule 31    page -> NUMBERP
+Rule 32    page -> NUMBER
+Rule 33    numberminus -> NUMBER MINUS NUMBER
+Rule 34    voirs -> VOIR AUSSI rest_voir_aussis
+Rule 35    voirs -> VOIR rest_voir_aussis
+Rule 36    rest_voir_aussis -> exp
+Rule 37    rest_voir_aussis -> exp SEP rest_voir_aussis
+Rule 38    type2 -> SSC words ESC
+Rule 39    type2 -> SSTRONG words ESTRONG
+Rule 40    type2 -> SEM words EEM
+Rule 41    type2 -> words
+Rule 42    words -> word
+Rule 43    words -> word moreword
+Rule 44    words -> word SEP moreword
+Rule 45    moreword -> word
+Rule 46    moreword -> word moreword
+Rule 47    moreword -> word SEP moreword
+Rule 48    word -> WORD
+Rule 49    word -> parenthese
+Rule 50    parenthese -> SPA parenthesecontents EPA
+Rule 51    parenthese -> SSB parenthesecontents ESB
+Rule 52    parenthese -> SPA voirs EPA
+Rule 53    parenthesecontents -> parenthesecontent
+Rule 54    parenthesecontents -> parenthesecontent moreparenthesecontent
+Rule 55    moreparenthesecontent -> parenthesecontent
+Rule 56    moreparenthesecontent -> parenthesecontent moreparenthesecontent
+Rule 57    parenthesecontent -> words
+Rule 58    parenthesecontent -> DOT
+Rule 59    parenthesecontent -> SEP
+Rule 60    parenthesecontent -> MINUS
+Rule 61    parenthesecontent -> APOSTROPHE
+Rule 62    descriptions -> description
+Rule 63    descriptions -> description moredescription
+Rule 64    moredescription -> description
+Rule 65    moredescription -> description moredescription
+Rule 66    description -> WORD
+Rule 67    description -> SLASH
+Rule 68    description -> cross
+Rule 69    description -> title
+Rule 70    description -> MINUS
+Rule 71    description -> APOSTROPHE
+Rule 72    description -> parenthese
+
+Terminals, with rules where they appear
+
+APOSTROPHE           : 61 71
+AUSSI                : 34
+BR                   : 
+CROSS                : 28
+DOT                  : 58
+EBQ                  : 7
+EEM                  : 21 22 40
+EP                   : 5 6
+EPA                  : 28 50 52
+ES                   : 29
+ESB                  : 51
+ESC                  : 23 24 25 26 27 38
+ESTRONG              : 19 39
+MINUS                : 33 60 70
+NOT                  : 
+NUMBER               : 32 33 33
+NUMBERP              : 31
+PARENTHESE           : 
+SBQ                  : 7
+SEM                  : 21 22 40
+SEP                  : 9 11 25 26 27 37 44 47 59
+SLASH                : 67
+SP                   : 5 6
+SPA                  : 28 50 52
+SS                   : 29
+SSB                  : 51
+SSC                  : 23 24 25 26 27 38
+SSTRONG              : 19 39
+STAR                 : 
+UNKNOWN              : 
+VOIR                 : 34 35
+WORD                 : 29 29 48 66
+error                : 
+
+Nonterminals, with rules where they appear
+
+common_new           : 13
+common_old           : 12
+cross                : 68
+description          : 62 63 64 65
+descriptions         : 15 24 26 27
+entries              : 7 0
+entry                : 1 2 3 4
+exp                  : 5 8 9 10 11 36 37
+exps                 : 6
+moredescription      : 63 65
+moreentries          : 2 4
+moreexp              : 9 11
+moreparenthesecontent : 54 56
+moreword             : 43 44 46 47
+numberminus          : 30
+page                 : 17
+parenthese           : 22 49 72
+parenthesecontent    : 53 54 55 56
+parenthesecontents   : 50 51
+person               : 16
+place                : 14
+rest_voir_aussis     : 34 35 37
+title                : 69
+type2                : 
+voirs                : 18 52
+word                 : 20 23 25 25 26 27 42 43 44 45 46 47
+words                : 19 21 22 38 39 40 41 57
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . entries
+    (1) entries -> . entry
+    (2) entries -> . entry moreentries
+    (5) entry -> . SP exp EP
+    (6) entry -> . SP exps EP
+    (7) entry -> . SBQ entries EBQ
+
+    SP              shift and go to state 3
+    SBQ             shift and go to state 4
+
+    entries                        shift and go to state 1
+    entry                          shift and go to state 2
+
+state 1
+
+    (0) S' -> entries .
+
+
+
+state 2
+
+    (1) entries -> entry .
+    (2) entries -> entry . moreentries
+    (3) moreentries -> . entry
+    (4) moreentries -> . entry moreentries
+    (5) entry -> . SP exp EP
+    (6) entry -> . SP exps EP
+    (7) entry -> . SBQ entries EBQ
+
+    $end            reduce using rule 1 (entries -> entry .)
+    EBQ             reduce using rule 1 (entries -> entry .)
+    SP              shift and go to state 3
+    SBQ             shift and go to state 4
+
+    entry                          shift and go to state 5
+    moreentries                    shift and go to state 6
+
+state 3
+
+    (5) entry -> SP . exp EP
+    (6) entry -> SP . exps EP
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (8) exps -> . exp
+    (9) exps -> . exp SEP moreexp
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    exp                            shift and go to state 7
+    exps                           shift and go to state 8
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 4
+
+    (7) entry -> SBQ . entries EBQ
+    (1) entries -> . entry
+    (2) entries -> . entry moreentries
+    (5) entry -> . SP exp EP
+    (6) entry -> . SP exps EP
+    (7) entry -> . SBQ entries EBQ
+
+    SP              shift and go to state 3
+    SBQ             shift and go to state 4
+
+    entries                        shift and go to state 34
+    entry                          shift and go to state 2
+
+state 5
+
+    (3) moreentries -> entry .
+    (4) moreentries -> entry . moreentries
+    (3) moreentries -> . entry
+    (4) moreentries -> . entry moreentries
+    (5) entry -> . SP exp EP
+    (6) entry -> . SP exps EP
+    (7) entry -> . SBQ entries EBQ
+
+    $end            reduce using rule 3 (moreentries -> entry .)
+    EBQ             reduce using rule 3 (moreentries -> entry .)
+    SP              shift and go to state 3
+    SBQ             shift and go to state 4
+
+    entry                          shift and go to state 5
+    moreentries                    shift and go to state 35
+
+state 6
+
+    (2) entries -> entry moreentries .
+
+    $end            reduce using rule 2 (entries -> entry moreentries .)
+    EBQ             reduce using rule 2 (entries -> entry moreentries .)
+
+
+state 7
+
+    (5) entry -> SP exp . EP
+    (8) exps -> exp .
+    (9) exps -> exp . SEP moreexp
+
+  ! shift/reduce conflict for EP resolved as shift
+    EP              shift and go to state 36
+    SEP             shift and go to state 37
+
+  ! EP              [ reduce using rule 8 (exps -> exp .) ]
+
+
+state 8
+
+    (6) entry -> SP exps . EP
+
+    EP              shift and go to state 38
+
+
+state 9
+
+    (12) exp -> common_old .
+
+    EP              reduce using rule 12 (exp -> common_old .)
+    SEP             reduce using rule 12 (exp -> common_old .)
+    EPA             reduce using rule 12 (exp -> common_old .)
+
+
+state 10
+
+    (13) exp -> common_new .
+
+    EP              reduce using rule 13 (exp -> common_new .)
+    SEP             reduce using rule 13 (exp -> common_new .)
+    EPA             reduce using rule 13 (exp -> common_new .)
+
+
+state 11
+
+    (14) exp -> place .
+
+    EP              reduce using rule 14 (exp -> place .)
+    SEP             reduce using rule 14 (exp -> place .)
+    EPA             reduce using rule 14 (exp -> place .)
+
+
+state 12
+
+    (15) exp -> descriptions .
+
+    EP              reduce using rule 15 (exp -> descriptions .)
+    SEP             reduce using rule 15 (exp -> descriptions .)
+    EPA             reduce using rule 15 (exp -> descriptions .)
+
+
+state 13
+
+    (16) exp -> person .
+
+    EP              reduce using rule 16 (exp -> person .)
+    SEP             reduce using rule 16 (exp -> person .)
+    EPA             reduce using rule 16 (exp -> person .)
+
+
+state 14
+
+    (17) exp -> page .
+
+    EP              reduce using rule 17 (exp -> page .)
+    SEP             reduce using rule 17 (exp -> page .)
+    EPA             reduce using rule 17 (exp -> page .)
+
+
+state 15
+
+    (18) exp -> voirs .
+
+    EP              reduce using rule 18 (exp -> voirs .)
+    SEP             reduce using rule 18 (exp -> voirs .)
+    EPA             reduce using rule 18 (exp -> voirs .)
+
+
+state 16
+
+    (20) common_old -> word .
+
+    EP              reduce using rule 20 (common_old -> word .)
+    SEP             reduce using rule 20 (common_old -> word .)
+    EPA             reduce using rule 20 (common_old -> word .)
+
+
+state 17
+
+    (19) common_new -> SSTRONG . words ESTRONG
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    words                          shift and go to state 39
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 18
+
+    (21) place -> SEM . words EEM
+    (22) place -> SEM . words EEM parenthese
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    words                          shift and go to state 44
+    parenthese                     shift and go to state 42
+    word                           shift and go to state 40
+
+state 19
+
+    (49) word -> parenthese .
+    (72) description -> parenthese .
+
+  ! reduce/reduce conflict for EP resolved using rule 49 (word -> parenthese .)
+  ! reduce/reduce conflict for SEP resolved using rule 49 (word -> parenthese .)
+  ! reduce/reduce conflict for ESC resolved using rule 49 (word -> parenthese .)
+  ! reduce/reduce conflict for EPA resolved using rule 49 (word -> parenthese .)
+    EP              reduce using rule 49 (word -> parenthese .)
+    SEP             reduce using rule 49 (word -> parenthese .)
+    ESC             reduce using rule 49 (word -> parenthese .)
+    EPA             reduce using rule 49 (word -> parenthese .)
+    WORD            reduce using rule 72 (description -> parenthese .)
+    SLASH           reduce using rule 72 (description -> parenthese .)
+    MINUS           reduce using rule 72 (description -> parenthese .)
+    APOSTROPHE      reduce using rule 72 (description -> parenthese .)
+    SPA             reduce using rule 72 (description -> parenthese .)
+    SSB             reduce using rule 72 (description -> parenthese .)
+
+  ! EP              [ reduce using rule 72 (description -> parenthese .) ]
+  ! SEP             [ reduce using rule 72 (description -> parenthese .) ]
+  ! ESC             [ reduce using rule 72 (description -> parenthese .) ]
+  ! EPA             [ reduce using rule 72 (description -> parenthese .) ]
+
+
+state 20
+
+    (62) descriptions -> description .
+    (63) descriptions -> description . moredescription
+    (64) moredescription -> . description
+    (65) moredescription -> . description moredescription
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    EP              reduce using rule 62 (descriptions -> description .)
+    SEP             reduce using rule 62 (descriptions -> description .)
+    ESC             reduce using rule 62 (descriptions -> description .)
+    EPA             reduce using rule 62 (descriptions -> description .)
+    WORD            shift and go to state 47
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 49
+    SSB             shift and go to state 33
+
+    description                    shift and go to state 45
+    moredescription                shift and go to state 46
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+    parenthese                     shift and go to state 48
+
+state 21
+
+    (23) person -> SSC . word ESC
+    (24) person -> SSC . descriptions ESC
+    (25) person -> SSC . word SEP word ESC
+    (26) person -> SSC . word SEP descriptions ESC
+    (27) person -> SSC . descriptions SEP word ESC
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    WORD            shift and go to state 26
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+
+    word                           shift and go to state 50
+    descriptions                   shift and go to state 51
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 22
+
+    (30) page -> numberminus .
+
+    EP              reduce using rule 30 (page -> numberminus .)
+    SEP             reduce using rule 30 (page -> numberminus .)
+    EPA             reduce using rule 30 (page -> numberminus .)
+
+
+state 23
+
+    (31) page -> NUMBERP .
+
+    EP              reduce using rule 31 (page -> NUMBERP .)
+    SEP             reduce using rule 31 (page -> NUMBERP .)
+    EPA             reduce using rule 31 (page -> NUMBERP .)
+
+
+state 24
+
+    (32) page -> NUMBER .
+    (33) numberminus -> NUMBER . MINUS NUMBER
+
+    EP              reduce using rule 32 (page -> NUMBER .)
+    SEP             reduce using rule 32 (page -> NUMBER .)
+    EPA             reduce using rule 32 (page -> NUMBER .)
+    MINUS           shift and go to state 52
+
+
+state 25
+
+    (34) voirs -> VOIR . AUSSI rest_voir_aussis
+    (35) voirs -> VOIR . rest_voir_aussis
+    (36) rest_voir_aussis -> . exp
+    (37) rest_voir_aussis -> . exp SEP rest_voir_aussis
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    AUSSI           shift and go to state 53
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    rest_voir_aussis               shift and go to state 54
+    exp                            shift and go to state 55
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 26
+
+    (48) word -> WORD .
+    (66) description -> WORD .
+    (29) title -> WORD . SS WORD ES
+
+  ! reduce/reduce conflict for EP resolved using rule 48 (word -> WORD .)
+  ! reduce/reduce conflict for SEP resolved using rule 48 (word -> WORD .)
+  ! reduce/reduce conflict for ESC resolved using rule 48 (word -> WORD .)
+  ! reduce/reduce conflict for EPA resolved using rule 48 (word -> WORD .)
+    EP              reduce using rule 48 (word -> WORD .)
+    SEP             reduce using rule 48 (word -> WORD .)
+    ESC             reduce using rule 48 (word -> WORD .)
+    EPA             reduce using rule 48 (word -> WORD .)
+    WORD            reduce using rule 66 (description -> WORD .)
+    SLASH           reduce using rule 66 (description -> WORD .)
+    MINUS           reduce using rule 66 (description -> WORD .)
+    APOSTROPHE      reduce using rule 66 (description -> WORD .)
+    SPA             reduce using rule 66 (description -> WORD .)
+    SSB             reduce using rule 66 (description -> WORD .)
+    SS              shift and go to state 56
+
+  ! EP              [ reduce using rule 66 (description -> WORD .) ]
+  ! SEP             [ reduce using rule 66 (description -> WORD .) ]
+  ! ESC             [ reduce using rule 66 (description -> WORD .) ]
+  ! EPA             [ reduce using rule 66 (description -> WORD .) ]
+
+
+state 27
+
+    (67) description -> SLASH .
+
+    WORD            reduce using rule 67 (description -> SLASH .)
+    SLASH           reduce using rule 67 (description -> SLASH .)
+    MINUS           reduce using rule 67 (description -> SLASH .)
+    APOSTROPHE      reduce using rule 67 (description -> SLASH .)
+    SPA             reduce using rule 67 (description -> SLASH .)
+    SSB             reduce using rule 67 (description -> SLASH .)
+    EP              reduce using rule 67 (description -> SLASH .)
+    SEP             reduce using rule 67 (description -> SLASH .)
+    ESC             reduce using rule 67 (description -> SLASH .)
+    EPA             reduce using rule 67 (description -> SLASH .)
+
+
+state 28
+
+    (68) description -> cross .
+
+    WORD            reduce using rule 68 (description -> cross .)
+    SLASH           reduce using rule 68 (description -> cross .)
+    MINUS           reduce using rule 68 (description -> cross .)
+    APOSTROPHE      reduce using rule 68 (description -> cross .)
+    SPA             reduce using rule 68 (description -> cross .)
+    SSB             reduce using rule 68 (description -> cross .)
+    EP              reduce using rule 68 (description -> cross .)
+    SEP             reduce using rule 68 (description -> cross .)
+    ESC             reduce using rule 68 (description -> cross .)
+    EPA             reduce using rule 68 (description -> cross .)
+
+
+state 29
+
+    (69) description -> title .
+
+    WORD            reduce using rule 69 (description -> title .)
+    SLASH           reduce using rule 69 (description -> title .)
+    MINUS           reduce using rule 69 (description -> title .)
+    APOSTROPHE      reduce using rule 69 (description -> title .)
+    SPA             reduce using rule 69 (description -> title .)
+    SSB             reduce using rule 69 (description -> title .)
+    EP              reduce using rule 69 (description -> title .)
+    SEP             reduce using rule 69 (description -> title .)
+    ESC             reduce using rule 69 (description -> title .)
+    EPA             reduce using rule 69 (description -> title .)
+
+
+state 30
+
+    (70) description -> MINUS .
+
+    WORD            reduce using rule 70 (description -> MINUS .)
+    SLASH           reduce using rule 70 (description -> MINUS .)
+    MINUS           reduce using rule 70 (description -> MINUS .)
+    APOSTROPHE      reduce using rule 70 (description -> MINUS .)
+    SPA             reduce using rule 70 (description -> MINUS .)
+    SSB             reduce using rule 70 (description -> MINUS .)
+    EP              reduce using rule 70 (description -> MINUS .)
+    SEP             reduce using rule 70 (description -> MINUS .)
+    ESC             reduce using rule 70 (description -> MINUS .)
+    EPA             reduce using rule 70 (description -> MINUS .)
+
+
+state 31
+
+    (71) description -> APOSTROPHE .
+
+    WORD            reduce using rule 71 (description -> APOSTROPHE .)
+    SLASH           reduce using rule 71 (description -> APOSTROPHE .)
+    MINUS           reduce using rule 71 (description -> APOSTROPHE .)
+    APOSTROPHE      reduce using rule 71 (description -> APOSTROPHE .)
+    SPA             reduce using rule 71 (description -> APOSTROPHE .)
+    SSB             reduce using rule 71 (description -> APOSTROPHE .)
+    EP              reduce using rule 71 (description -> APOSTROPHE .)
+    SEP             reduce using rule 71 (description -> APOSTROPHE .)
+    ESC             reduce using rule 71 (description -> APOSTROPHE .)
+    EPA             reduce using rule 71 (description -> APOSTROPHE .)
+
+
+state 32
+
+    (50) parenthese -> SPA . parenthesecontents EPA
+    (52) parenthese -> SPA . voirs EPA
+    (28) cross -> SPA . CROSS EPA
+    (53) parenthesecontents -> . parenthesecontent
+    (54) parenthesecontents -> . parenthesecontent moreparenthesecontent
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    CROSS           shift and go to state 59
+    VOIR            shift and go to state 25
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontents             shift and go to state 57
+    voirs                          shift and go to state 58
+    parenthesecontent              shift and go to state 60
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 33
+
+    (51) parenthese -> SSB . parenthesecontents ESB
+    (53) parenthesecontents -> . parenthesecontent
+    (54) parenthesecontents -> . parenthesecontent moreparenthesecontent
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontents             shift and go to state 66
+    parenthesecontent              shift and go to state 60
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 34
+
+    (7) entry -> SBQ entries . EBQ
+
+    EBQ             shift and go to state 67
+
+
+state 35
+
+    (4) moreentries -> entry moreentries .
+
+    $end            reduce using rule 4 (moreentries -> entry moreentries .)
+    EBQ             reduce using rule 4 (moreentries -> entry moreentries .)
+
+
+state 36
+
+    (5) entry -> SP exp EP .
+
+    SP              reduce using rule 5 (entry -> SP exp EP .)
+    SBQ             reduce using rule 5 (entry -> SP exp EP .)
+    $end            reduce using rule 5 (entry -> SP exp EP .)
+    EBQ             reduce using rule 5 (entry -> SP exp EP .)
+
+
+state 37
+
+    (9) exps -> exp SEP . moreexp
+    (10) moreexp -> . exp
+    (11) moreexp -> . exp SEP moreexp
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    exp                            shift and go to state 68
+    moreexp                        shift and go to state 69
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 38
+
+    (6) entry -> SP exps EP .
+
+    SP              reduce using rule 6 (entry -> SP exps EP .)
+    SBQ             reduce using rule 6 (entry -> SP exps EP .)
+    $end            reduce using rule 6 (entry -> SP exps EP .)
+    EBQ             reduce using rule 6 (entry -> SP exps EP .)
+
+
+state 39
+
+    (19) common_new -> SSTRONG words . ESTRONG
+
+    ESTRONG         shift and go to state 70
+
+
+state 40
+
+    (42) words -> word .
+    (43) words -> word . moreword
+    (44) words -> word . SEP moreword
+    (45) moreword -> . word
+    (46) moreword -> . word moreword
+    (47) moreword -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+  ! shift/reduce conflict for SEP resolved as shift
+  ! shift/reduce conflict for WORD resolved as shift
+  ! shift/reduce conflict for SPA resolved as shift
+  ! shift/reduce conflict for SSB resolved as shift
+    ESTRONG         reduce using rule 42 (words -> word .)
+    EEM             reduce using rule 42 (words -> word .)
+    DOT             reduce using rule 42 (words -> word .)
+    MINUS           reduce using rule 42 (words -> word .)
+    APOSTROPHE      reduce using rule 42 (words -> word .)
+    EPA             reduce using rule 42 (words -> word .)
+    ESB             reduce using rule 42 (words -> word .)
+    SEP             shift and go to state 73
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+  ! SEP             [ reduce using rule 42 (words -> word .) ]
+  ! WORD            [ reduce using rule 42 (words -> word .) ]
+  ! SPA             [ reduce using rule 42 (words -> word .) ]
+  ! SSB             [ reduce using rule 42 (words -> word .) ]
+
+    word                           shift and go to state 71
+    moreword                       shift and go to state 72
+    parenthese                     shift and go to state 42
+
+state 41
+
+    (48) word -> WORD .
+
+    SEP             reduce using rule 48 (word -> WORD .)
+    WORD            reduce using rule 48 (word -> WORD .)
+    SPA             reduce using rule 48 (word -> WORD .)
+    SSB             reduce using rule 48 (word -> WORD .)
+    ESTRONG         reduce using rule 48 (word -> WORD .)
+    EEM             reduce using rule 48 (word -> WORD .)
+    DOT             reduce using rule 48 (word -> WORD .)
+    MINUS           reduce using rule 48 (word -> WORD .)
+    APOSTROPHE      reduce using rule 48 (word -> WORD .)
+    EPA             reduce using rule 48 (word -> WORD .)
+    ESB             reduce using rule 48 (word -> WORD .)
+    ESC             reduce using rule 48 (word -> WORD .)
+
+
+state 42
+
+    (49) word -> parenthese .
+
+    SEP             reduce using rule 49 (word -> parenthese .)
+    WORD            reduce using rule 49 (word -> parenthese .)
+    SPA             reduce using rule 49 (word -> parenthese .)
+    SSB             reduce using rule 49 (word -> parenthese .)
+    ESTRONG         reduce using rule 49 (word -> parenthese .)
+    EEM             reduce using rule 49 (word -> parenthese .)
+    DOT             reduce using rule 49 (word -> parenthese .)
+    MINUS           reduce using rule 49 (word -> parenthese .)
+    APOSTROPHE      reduce using rule 49 (word -> parenthese .)
+    EPA             reduce using rule 49 (word -> parenthese .)
+    ESB             reduce using rule 49 (word -> parenthese .)
+    ESC             reduce using rule 49 (word -> parenthese .)
+
+
+state 43
+
+    (50) parenthese -> SPA . parenthesecontents EPA
+    (52) parenthese -> SPA . voirs EPA
+    (53) parenthesecontents -> . parenthesecontent
+    (54) parenthesecontents -> . parenthesecontent moreparenthesecontent
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    VOIR            shift and go to state 25
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontents             shift and go to state 57
+    voirs                          shift and go to state 58
+    parenthesecontent              shift and go to state 60
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 44
+
+    (21) place -> SEM words . EEM
+    (22) place -> SEM words . EEM parenthese
+
+    EEM             shift and go to state 74
+
+
+state 45
+
+    (64) moredescription -> description .
+    (65) moredescription -> description . moredescription
+    (64) moredescription -> . description
+    (65) moredescription -> . description moredescription
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    EP              reduce using rule 64 (moredescription -> description .)
+    SEP             reduce using rule 64 (moredescription -> description .)
+    ESC             reduce using rule 64 (moredescription -> description .)
+    EPA             reduce using rule 64 (moredescription -> description .)
+    WORD            shift and go to state 47
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 49
+    SSB             shift and go to state 33
+
+    description                    shift and go to state 45
+    moredescription                shift and go to state 75
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+    parenthese                     shift and go to state 48
+
+state 46
+
+    (63) descriptions -> description moredescription .
+
+    EP              reduce using rule 63 (descriptions -> description moredescription .)
+    SEP             reduce using rule 63 (descriptions -> description moredescription .)
+    ESC             reduce using rule 63 (descriptions -> description moredescription .)
+    EPA             reduce using rule 63 (descriptions -> description moredescription .)
+
+
+state 47
+
+    (66) description -> WORD .
+    (29) title -> WORD . SS WORD ES
+
+    WORD            reduce using rule 66 (description -> WORD .)
+    SLASH           reduce using rule 66 (description -> WORD .)
+    MINUS           reduce using rule 66 (description -> WORD .)
+    APOSTROPHE      reduce using rule 66 (description -> WORD .)
+    SPA             reduce using rule 66 (description -> WORD .)
+    SSB             reduce using rule 66 (description -> WORD .)
+    EP              reduce using rule 66 (description -> WORD .)
+    SEP             reduce using rule 66 (description -> WORD .)
+    ESC             reduce using rule 66 (description -> WORD .)
+    EPA             reduce using rule 66 (description -> WORD .)
+    SS              shift and go to state 56
+
+
+state 48
+
+    (72) description -> parenthese .
+
+    WORD            reduce using rule 72 (description -> parenthese .)
+    SLASH           reduce using rule 72 (description -> parenthese .)
+    MINUS           reduce using rule 72 (description -> parenthese .)
+    APOSTROPHE      reduce using rule 72 (description -> parenthese .)
+    SPA             reduce using rule 72 (description -> parenthese .)
+    SSB             reduce using rule 72 (description -> parenthese .)
+    EP              reduce using rule 72 (description -> parenthese .)
+    SEP             reduce using rule 72 (description -> parenthese .)
+    ESC             reduce using rule 72 (description -> parenthese .)
+    EPA             reduce using rule 72 (description -> parenthese .)
+
+
+state 49
+
+    (28) cross -> SPA . CROSS EPA
+    (50) parenthese -> SPA . parenthesecontents EPA
+    (52) parenthese -> SPA . voirs EPA
+    (53) parenthesecontents -> . parenthesecontent
+    (54) parenthesecontents -> . parenthesecontent moreparenthesecontent
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    CROSS           shift and go to state 59
+    VOIR            shift and go to state 25
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontents             shift and go to state 57
+    voirs                          shift and go to state 58
+    parenthesecontent              shift and go to state 60
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 50
+
+    (23) person -> SSC word . ESC
+    (25) person -> SSC word . SEP word ESC
+    (26) person -> SSC word . SEP descriptions ESC
+
+    ESC             shift and go to state 76
+    SEP             shift and go to state 77
+
+
+state 51
+
+    (24) person -> SSC descriptions . ESC
+    (27) person -> SSC descriptions . SEP word ESC
+
+    ESC             shift and go to state 78
+    SEP             shift and go to state 79
+
+
+state 52
+
+    (33) numberminus -> NUMBER MINUS . NUMBER
+
+    NUMBER          shift and go to state 80
+
+
+state 53
+
+    (34) voirs -> VOIR AUSSI . rest_voir_aussis
+    (36) rest_voir_aussis -> . exp
+    (37) rest_voir_aussis -> . exp SEP rest_voir_aussis
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    rest_voir_aussis               shift and go to state 81
+    exp                            shift and go to state 55
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 54
+
+    (35) voirs -> VOIR rest_voir_aussis .
+
+    EP              reduce using rule 35 (voirs -> VOIR rest_voir_aussis .)
+    SEP             reduce using rule 35 (voirs -> VOIR rest_voir_aussis .)
+    EPA             reduce using rule 35 (voirs -> VOIR rest_voir_aussis .)
+
+
+state 55
+
+    (36) rest_voir_aussis -> exp .
+    (37) rest_voir_aussis -> exp . SEP rest_voir_aussis
+
+  ! shift/reduce conflict for SEP resolved as shift
+    EP              reduce using rule 36 (rest_voir_aussis -> exp .)
+    EPA             reduce using rule 36 (rest_voir_aussis -> exp .)
+    SEP             shift and go to state 82
+
+  ! SEP             [ reduce using rule 36 (rest_voir_aussis -> exp .) ]
+
+
+state 56
+
+    (29) title -> WORD SS . WORD ES
+
+    WORD            shift and go to state 83
+
+
+state 57
+
+    (50) parenthese -> SPA parenthesecontents . EPA
+
+    EPA             shift and go to state 84
+
+
+state 58
+
+    (52) parenthese -> SPA voirs . EPA
+
+    EPA             shift and go to state 85
+
+
+state 59
+
+    (28) cross -> SPA CROSS . EPA
+
+    EPA             shift and go to state 86
+
+
+state 60
+
+    (53) parenthesecontents -> parenthesecontent .
+    (54) parenthesecontents -> parenthesecontent . moreparenthesecontent
+    (55) moreparenthesecontent -> . parenthesecontent
+    (56) moreparenthesecontent -> . parenthesecontent moreparenthesecontent
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    EPA             reduce using rule 53 (parenthesecontents -> parenthesecontent .)
+    ESB             reduce using rule 53 (parenthesecontents -> parenthesecontent .)
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontent              shift and go to state 87
+    moreparenthesecontent          shift and go to state 88
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 61
+
+    (57) parenthesecontent -> words .
+
+    DOT             reduce using rule 57 (parenthesecontent -> words .)
+    SEP             reduce using rule 57 (parenthesecontent -> words .)
+    MINUS           reduce using rule 57 (parenthesecontent -> words .)
+    APOSTROPHE      reduce using rule 57 (parenthesecontent -> words .)
+    WORD            reduce using rule 57 (parenthesecontent -> words .)
+    SPA             reduce using rule 57 (parenthesecontent -> words .)
+    SSB             reduce using rule 57 (parenthesecontent -> words .)
+    EPA             reduce using rule 57 (parenthesecontent -> words .)
+    ESB             reduce using rule 57 (parenthesecontent -> words .)
+
+
+state 62
+
+    (58) parenthesecontent -> DOT .
+
+    DOT             reduce using rule 58 (parenthesecontent -> DOT .)
+    SEP             reduce using rule 58 (parenthesecontent -> DOT .)
+    MINUS           reduce using rule 58 (parenthesecontent -> DOT .)
+    APOSTROPHE      reduce using rule 58 (parenthesecontent -> DOT .)
+    WORD            reduce using rule 58 (parenthesecontent -> DOT .)
+    SPA             reduce using rule 58 (parenthesecontent -> DOT .)
+    SSB             reduce using rule 58 (parenthesecontent -> DOT .)
+    EPA             reduce using rule 58 (parenthesecontent -> DOT .)
+    ESB             reduce using rule 58 (parenthesecontent -> DOT .)
+
+
+state 63
+
+    (59) parenthesecontent -> SEP .
+
+    DOT             reduce using rule 59 (parenthesecontent -> SEP .)
+    SEP             reduce using rule 59 (parenthesecontent -> SEP .)
+    MINUS           reduce using rule 59 (parenthesecontent -> SEP .)
+    APOSTROPHE      reduce using rule 59 (parenthesecontent -> SEP .)
+    WORD            reduce using rule 59 (parenthesecontent -> SEP .)
+    SPA             reduce using rule 59 (parenthesecontent -> SEP .)
+    SSB             reduce using rule 59 (parenthesecontent -> SEP .)
+    EPA             reduce using rule 59 (parenthesecontent -> SEP .)
+    ESB             reduce using rule 59 (parenthesecontent -> SEP .)
+
+
+state 64
+
+    (60) parenthesecontent -> MINUS .
+
+    DOT             reduce using rule 60 (parenthesecontent -> MINUS .)
+    SEP             reduce using rule 60 (parenthesecontent -> MINUS .)
+    MINUS           reduce using rule 60 (parenthesecontent -> MINUS .)
+    APOSTROPHE      reduce using rule 60 (parenthesecontent -> MINUS .)
+    WORD            reduce using rule 60 (parenthesecontent -> MINUS .)
+    SPA             reduce using rule 60 (parenthesecontent -> MINUS .)
+    SSB             reduce using rule 60 (parenthesecontent -> MINUS .)
+    EPA             reduce using rule 60 (parenthesecontent -> MINUS .)
+    ESB             reduce using rule 60 (parenthesecontent -> MINUS .)
+
+
+state 65
+
+    (61) parenthesecontent -> APOSTROPHE .
+
+    DOT             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    SEP             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    MINUS           reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    APOSTROPHE      reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    WORD            reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    SPA             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    SSB             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    EPA             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+    ESB             reduce using rule 61 (parenthesecontent -> APOSTROPHE .)
+
+
+state 66
+
+    (51) parenthese -> SSB parenthesecontents . ESB
+
+    ESB             shift and go to state 89
+
+
+state 67
+
+    (7) entry -> SBQ entries EBQ .
+
+    SP              reduce using rule 7 (entry -> SBQ entries EBQ .)
+    SBQ             reduce using rule 7 (entry -> SBQ entries EBQ .)
+    $end            reduce using rule 7 (entry -> SBQ entries EBQ .)
+    EBQ             reduce using rule 7 (entry -> SBQ entries EBQ .)
+
+
+state 68
+
+    (10) moreexp -> exp .
+    (11) moreexp -> exp . SEP moreexp
+
+    EP              reduce using rule 10 (moreexp -> exp .)
+    SEP             shift and go to state 90
+
+
+state 69
+
+    (9) exps -> exp SEP moreexp .
+
+    EP              reduce using rule 9 (exps -> exp SEP moreexp .)
+
+
+state 70
+
+    (19) common_new -> SSTRONG words ESTRONG .
+
+    EP              reduce using rule 19 (common_new -> SSTRONG words ESTRONG .)
+    SEP             reduce using rule 19 (common_new -> SSTRONG words ESTRONG .)
+    EPA             reduce using rule 19 (common_new -> SSTRONG words ESTRONG .)
+
+
+state 71
+
+    (45) moreword -> word .
+    (46) moreword -> word . moreword
+    (47) moreword -> word . SEP moreword
+    (45) moreword -> . word
+    (46) moreword -> . word moreword
+    (47) moreword -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+  ! shift/reduce conflict for SEP resolved as shift
+  ! shift/reduce conflict for WORD resolved as shift
+  ! shift/reduce conflict for SPA resolved as shift
+  ! shift/reduce conflict for SSB resolved as shift
+    ESTRONG         reduce using rule 45 (moreword -> word .)
+    EEM             reduce using rule 45 (moreword -> word .)
+    DOT             reduce using rule 45 (moreword -> word .)
+    MINUS           reduce using rule 45 (moreword -> word .)
+    APOSTROPHE      reduce using rule 45 (moreword -> word .)
+    EPA             reduce using rule 45 (moreword -> word .)
+    ESB             reduce using rule 45 (moreword -> word .)
+    SEP             shift and go to state 92
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+  ! SEP             [ reduce using rule 45 (moreword -> word .) ]
+  ! WORD            [ reduce using rule 45 (moreword -> word .) ]
+  ! SPA             [ reduce using rule 45 (moreword -> word .) ]
+  ! SSB             [ reduce using rule 45 (moreword -> word .) ]
+
+    word                           shift and go to state 71
+    moreword                       shift and go to state 91
+    parenthese                     shift and go to state 42
+
+state 72
+
+    (43) words -> word moreword .
+
+    ESTRONG         reduce using rule 43 (words -> word moreword .)
+    EEM             reduce using rule 43 (words -> word moreword .)
+    DOT             reduce using rule 43 (words -> word moreword .)
+    SEP             reduce using rule 43 (words -> word moreword .)
+    MINUS           reduce using rule 43 (words -> word moreword .)
+    APOSTROPHE      reduce using rule 43 (words -> word moreword .)
+    WORD            reduce using rule 43 (words -> word moreword .)
+    SPA             reduce using rule 43 (words -> word moreword .)
+    SSB             reduce using rule 43 (words -> word moreword .)
+    EPA             reduce using rule 43 (words -> word moreword .)
+    ESB             reduce using rule 43 (words -> word moreword .)
+
+
+state 73
+
+    (44) words -> word SEP . moreword
+    (45) moreword -> . word
+    (46) moreword -> . word moreword
+    (47) moreword -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    word                           shift and go to state 71
+    moreword                       shift and go to state 93
+    parenthese                     shift and go to state 42
+
+state 74
+
+    (21) place -> SEM words EEM .
+    (22) place -> SEM words EEM . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    EP              reduce using rule 21 (place -> SEM words EEM .)
+    SEP             reduce using rule 21 (place -> SEM words EEM .)
+    EPA             reduce using rule 21 (place -> SEM words EEM .)
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthese                     shift and go to state 94
+
+state 75
+
+    (65) moredescription -> description moredescription .
+
+    EP              reduce using rule 65 (moredescription -> description moredescription .)
+    SEP             reduce using rule 65 (moredescription -> description moredescription .)
+    ESC             reduce using rule 65 (moredescription -> description moredescription .)
+    EPA             reduce using rule 65 (moredescription -> description moredescription .)
+
+
+state 76
+
+    (23) person -> SSC word ESC .
+
+    EP              reduce using rule 23 (person -> SSC word ESC .)
+    SEP             reduce using rule 23 (person -> SSC word ESC .)
+    EPA             reduce using rule 23 (person -> SSC word ESC .)
+
+
+state 77
+
+    (25) person -> SSC word SEP . word ESC
+    (26) person -> SSC word SEP . descriptions ESC
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    WORD            shift and go to state 26
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+
+    word                           shift and go to state 95
+    descriptions                   shift and go to state 96
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 78
+
+    (24) person -> SSC descriptions ESC .
+
+    EP              reduce using rule 24 (person -> SSC descriptions ESC .)
+    SEP             reduce using rule 24 (person -> SSC descriptions ESC .)
+    EPA             reduce using rule 24 (person -> SSC descriptions ESC .)
+
+
+state 79
+
+    (27) person -> SSC descriptions SEP . word ESC
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    word                           shift and go to state 97
+    parenthese                     shift and go to state 42
+
+state 80
+
+    (33) numberminus -> NUMBER MINUS NUMBER .
+
+    EP              reduce using rule 33 (numberminus -> NUMBER MINUS NUMBER .)
+    SEP             reduce using rule 33 (numberminus -> NUMBER MINUS NUMBER .)
+    EPA             reduce using rule 33 (numberminus -> NUMBER MINUS NUMBER .)
+
+
+state 81
+
+    (34) voirs -> VOIR AUSSI rest_voir_aussis .
+
+    EP              reduce using rule 34 (voirs -> VOIR AUSSI rest_voir_aussis .)
+    SEP             reduce using rule 34 (voirs -> VOIR AUSSI rest_voir_aussis .)
+    EPA             reduce using rule 34 (voirs -> VOIR AUSSI rest_voir_aussis .)
+
+
+state 82
+
+    (37) rest_voir_aussis -> exp SEP . rest_voir_aussis
+    (36) rest_voir_aussis -> . exp
+    (37) rest_voir_aussis -> . exp SEP rest_voir_aussis
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    exp                            shift and go to state 55
+    rest_voir_aussis               shift and go to state 98
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 83
+
+    (29) title -> WORD SS WORD . ES
+
+    ES              shift and go to state 99
+
+
+state 84
+
+    (50) parenthese -> SPA parenthesecontents EPA .
+
+    EP              reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    SEP             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    WORD            reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    SLASH           reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    MINUS           reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    APOSTROPHE      reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    SPA             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    SSB             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    ESTRONG         reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    EEM             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    ESC             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    EPA             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    DOT             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+    ESB             reduce using rule 50 (parenthese -> SPA parenthesecontents EPA .)
+
+
+state 85
+
+    (52) parenthese -> SPA voirs EPA .
+
+    EP              reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    SEP             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    WORD            reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    SLASH           reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    MINUS           reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    APOSTROPHE      reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    SPA             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    SSB             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    ESTRONG         reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    EEM             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    ESC             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    EPA             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    DOT             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+    ESB             reduce using rule 52 (parenthese -> SPA voirs EPA .)
+
+
+state 86
+
+    (28) cross -> SPA CROSS EPA .
+
+    WORD            reduce using rule 28 (cross -> SPA CROSS EPA .)
+    SLASH           reduce using rule 28 (cross -> SPA CROSS EPA .)
+    MINUS           reduce using rule 28 (cross -> SPA CROSS EPA .)
+    APOSTROPHE      reduce using rule 28 (cross -> SPA CROSS EPA .)
+    SPA             reduce using rule 28 (cross -> SPA CROSS EPA .)
+    SSB             reduce using rule 28 (cross -> SPA CROSS EPA .)
+    EP              reduce using rule 28 (cross -> SPA CROSS EPA .)
+    SEP             reduce using rule 28 (cross -> SPA CROSS EPA .)
+    ESC             reduce using rule 28 (cross -> SPA CROSS EPA .)
+    EPA             reduce using rule 28 (cross -> SPA CROSS EPA .)
+
+
+state 87
+
+    (55) moreparenthesecontent -> parenthesecontent .
+    (56) moreparenthesecontent -> parenthesecontent . moreparenthesecontent
+    (55) moreparenthesecontent -> . parenthesecontent
+    (56) moreparenthesecontent -> . parenthesecontent moreparenthesecontent
+    (57) parenthesecontent -> . words
+    (58) parenthesecontent -> . DOT
+    (59) parenthesecontent -> . SEP
+    (60) parenthesecontent -> . MINUS
+    (61) parenthesecontent -> . APOSTROPHE
+    (42) words -> . word
+    (43) words -> . word moreword
+    (44) words -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    EPA             reduce using rule 55 (moreparenthesecontent -> parenthesecontent .)
+    ESB             reduce using rule 55 (moreparenthesecontent -> parenthesecontent .)
+    DOT             shift and go to state 62
+    SEP             shift and go to state 63
+    MINUS           shift and go to state 64
+    APOSTROPHE      shift and go to state 65
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    parenthesecontent              shift and go to state 87
+    moreparenthesecontent          shift and go to state 100
+    words                          shift and go to state 61
+    word                           shift and go to state 40
+    parenthese                     shift and go to state 42
+
+state 88
+
+    (54) parenthesecontents -> parenthesecontent moreparenthesecontent .
+
+    EPA             reduce using rule 54 (parenthesecontents -> parenthesecontent moreparenthesecontent .)
+    ESB             reduce using rule 54 (parenthesecontents -> parenthesecontent moreparenthesecontent .)
+
+
+state 89
+
+    (51) parenthese -> SSB parenthesecontents ESB .
+
+    EP              reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    SEP             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    WORD            reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    SLASH           reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    MINUS           reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    APOSTROPHE      reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    SPA             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    SSB             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    ESTRONG         reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    EEM             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    ESC             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    EPA             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    DOT             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+    ESB             reduce using rule 51 (parenthese -> SSB parenthesecontents ESB .)
+
+
+state 90
+
+    (11) moreexp -> exp SEP . moreexp
+    (10) moreexp -> . exp
+    (11) moreexp -> . exp SEP moreexp
+    (12) exp -> . common_old
+    (13) exp -> . common_new
+    (14) exp -> . place
+    (15) exp -> . descriptions
+    (16) exp -> . person
+    (17) exp -> . page
+    (18) exp -> . voirs
+    (20) common_old -> . word
+    (19) common_new -> . SSTRONG words ESTRONG
+    (21) place -> . SEM words EEM
+    (22) place -> . SEM words EEM parenthese
+    (62) descriptions -> . description
+    (63) descriptions -> . description moredescription
+    (23) person -> . SSC word ESC
+    (24) person -> . SSC descriptions ESC
+    (25) person -> . SSC word SEP word ESC
+    (26) person -> . SSC word SEP descriptions ESC
+    (27) person -> . SSC descriptions SEP word ESC
+    (30) page -> . numberminus
+    (31) page -> . NUMBERP
+    (32) page -> . NUMBER
+    (34) voirs -> . VOIR AUSSI rest_voir_aussis
+    (35) voirs -> . VOIR rest_voir_aussis
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (66) description -> . WORD
+    (67) description -> . SLASH
+    (68) description -> . cross
+    (69) description -> . title
+    (70) description -> . MINUS
+    (71) description -> . APOSTROPHE
+    (72) description -> . parenthese
+    (33) numberminus -> . NUMBER MINUS NUMBER
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+    (28) cross -> . SPA CROSS EPA
+    (29) title -> . WORD SS WORD ES
+
+    SSTRONG         shift and go to state 17
+    SEM             shift and go to state 18
+    SSC             shift and go to state 21
+    NUMBERP         shift and go to state 23
+    NUMBER          shift and go to state 24
+    VOIR            shift and go to state 25
+    WORD            shift and go to state 26
+    SLASH           shift and go to state 27
+    MINUS           shift and go to state 30
+    APOSTROPHE      shift and go to state 31
+    SPA             shift and go to state 32
+    SSB             shift and go to state 33
+
+    exp                            shift and go to state 68
+    moreexp                        shift and go to state 101
+    common_old                     shift and go to state 9
+    common_new                     shift and go to state 10
+    place                          shift and go to state 11
+    descriptions                   shift and go to state 12
+    person                         shift and go to state 13
+    page                           shift and go to state 14
+    voirs                          shift and go to state 15
+    word                           shift and go to state 16
+    parenthese                     shift and go to state 19
+    description                    shift and go to state 20
+    numberminus                    shift and go to state 22
+    cross                          shift and go to state 28
+    title                          shift and go to state 29
+
+state 91
+
+    (46) moreword -> word moreword .
+
+    ESTRONG         reduce using rule 46 (moreword -> word moreword .)
+    EEM             reduce using rule 46 (moreword -> word moreword .)
+    DOT             reduce using rule 46 (moreword -> word moreword .)
+    SEP             reduce using rule 46 (moreword -> word moreword .)
+    MINUS           reduce using rule 46 (moreword -> word moreword .)
+    APOSTROPHE      reduce using rule 46 (moreword -> word moreword .)
+    WORD            reduce using rule 46 (moreword -> word moreword .)
+    SPA             reduce using rule 46 (moreword -> word moreword .)
+    SSB             reduce using rule 46 (moreword -> word moreword .)
+    EPA             reduce using rule 46 (moreword -> word moreword .)
+    ESB             reduce using rule 46 (moreword -> word moreword .)
+
+
+state 92
+
+    (47) moreword -> word SEP . moreword
+    (45) moreword -> . word
+    (46) moreword -> . word moreword
+    (47) moreword -> . word SEP moreword
+    (48) word -> . WORD
+    (49) word -> . parenthese
+    (50) parenthese -> . SPA parenthesecontents EPA
+    (51) parenthese -> . SSB parenthesecontents ESB
+    (52) parenthese -> . SPA voirs EPA
+
+    WORD            shift and go to state 41
+    SPA             shift and go to state 43
+    SSB             shift and go to state 33
+
+    word                           shift and go to state 71
+    moreword                       shift and go to state 102
+    parenthese                     shift and go to state 42
+
+state 93
+
+    (44) words -> word SEP moreword .
+
+    ESTRONG         reduce using rule 44 (words -> word SEP moreword .)
+    EEM             reduce using rule 44 (words -> word SEP moreword .)
+    DOT             reduce using rule 44 (words -> word SEP moreword .)
+    SEP             reduce using rule 44 (words -> word SEP moreword .)
+    MINUS           reduce using rule 44 (words -> word SEP moreword .)
+    APOSTROPHE      reduce using rule 44 (words -> word SEP moreword .)
+    WORD            reduce using rule 44 (words -> word SEP moreword .)
+    SPA             reduce using rule 44 (words -> word SEP moreword .)
+    SSB             reduce using rule 44 (words -> word SEP moreword .)
+    EPA             reduce using rule 44 (words -> word SEP moreword .)
+    ESB             reduce using rule 44 (words -> word SEP moreword .)
+
+
+state 94
+
+    (22) place -> SEM words EEM parenthese .
+
+    EP              reduce using rule 22 (place -> SEM words EEM parenthese .)
+    SEP             reduce using rule 22 (place -> SEM words EEM parenthese .)
+    EPA             reduce using rule 22 (place -> SEM words EEM parenthese .)
+
+
+state 95
+
+    (25) person -> SSC word SEP word . ESC
+
+    ESC             shift and go to state 103
+
+
+state 96
+
+    (26) person -> SSC word SEP descriptions . ESC
+
+    ESC             shift and go to state 104
+
+
+state 97
+
+    (27) person -> SSC descriptions SEP word . ESC
+
+    ESC             shift and go to state 105
+
+
+state 98
+
+    (37) rest_voir_aussis -> exp SEP rest_voir_aussis .
+
+    SEP             reduce using rule 37 (rest_voir_aussis -> exp SEP rest_voir_aussis .)
+    EP              reduce using rule 37 (rest_voir_aussis -> exp SEP rest_voir_aussis .)
+    EPA             reduce using rule 37 (rest_voir_aussis -> exp SEP rest_voir_aussis .)
+
+
+state 99
+
+    (29) title -> WORD SS WORD ES .
+
+    WORD            reduce using rule 29 (title -> WORD SS WORD ES .)
+    SLASH           reduce using rule 29 (title -> WORD SS WORD ES .)
+    MINUS           reduce using rule 29 (title -> WORD SS WORD ES .)
+    APOSTROPHE      reduce using rule 29 (title -> WORD SS WORD ES .)
+    SPA             reduce using rule 29 (title -> WORD SS WORD ES .)
+    SSB             reduce using rule 29 (title -> WORD SS WORD ES .)
+    EP              reduce using rule 29 (title -> WORD SS WORD ES .)
+    SEP             reduce using rule 29 (title -> WORD SS WORD ES .)
+    ESC             reduce using rule 29 (title -> WORD SS WORD ES .)
+    EPA             reduce using rule 29 (title -> WORD SS WORD ES .)
+
+
+state 100
+
+    (56) moreparenthesecontent -> parenthesecontent moreparenthesecontent .
+
+    EPA             reduce using rule 56 (moreparenthesecontent -> parenthesecontent moreparenthesecontent .)
+    ESB             reduce using rule 56 (moreparenthesecontent -> parenthesecontent moreparenthesecontent .)
+
+
+state 101
+
+    (11) moreexp -> exp SEP moreexp .
+
+    EP              reduce using rule 11 (moreexp -> exp SEP moreexp .)
+
+
+state 102
+
+    (47) moreword -> word SEP moreword .
+
+    ESTRONG         reduce using rule 47 (moreword -> word SEP moreword .)
+    EEM             reduce using rule 47 (moreword -> word SEP moreword .)
+    DOT             reduce using rule 47 (moreword -> word SEP moreword .)
+    SEP             reduce using rule 47 (moreword -> word SEP moreword .)
+    MINUS           reduce using rule 47 (moreword -> word SEP moreword .)
+    APOSTROPHE      reduce using rule 47 (moreword -> word SEP moreword .)
+    WORD            reduce using rule 47 (moreword -> word SEP moreword .)
+    SPA             reduce using rule 47 (moreword -> word SEP moreword .)
+    SSB             reduce using rule 47 (moreword -> word SEP moreword .)
+    EPA             reduce using rule 47 (moreword -> word SEP moreword .)
+    ESB             reduce using rule 47 (moreword -> word SEP moreword .)
+
+
+state 103
+
+    (25) person -> SSC word SEP word ESC .
+
+    EP              reduce using rule 25 (person -> SSC word SEP word ESC .)
+    SEP             reduce using rule 25 (person -> SSC word SEP word ESC .)
+    EPA             reduce using rule 25 (person -> SSC word SEP word ESC .)
+
+
+state 104
+
+    (26) person -> SSC word SEP descriptions ESC .
+
+    EP              reduce using rule 26 (person -> SSC word SEP descriptions ESC .)
+    SEP             reduce using rule 26 (person -> SSC word SEP descriptions ESC .)
+    EPA             reduce using rule 26 (person -> SSC word SEP descriptions ESC .)
+
+
+state 105
+
+    (27) person -> SSC descriptions SEP word ESC .
+
+    EP              reduce using rule 27 (person -> SSC descriptions SEP word ESC .)
+    SEP             reduce using rule 27 (person -> SSC descriptions SEP word ESC .)
+    EPA             reduce using rule 27 (person -> SSC descriptions SEP word ESC .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for EP in state 7 resolved as shift
+WARNING: shift/reduce conflict for SEP in state 40 resolved as shift
+WARNING: shift/reduce conflict for WORD in state 40 resolved as shift
+WARNING: shift/reduce conflict for SPA in state 40 resolved as shift
+WARNING: shift/reduce conflict for SSB in state 40 resolved as shift
+WARNING: shift/reduce conflict for SEP in state 55 resolved as shift
+WARNING: shift/reduce conflict for SEP in state 71 resolved as shift
+WARNING: shift/reduce conflict for WORD in state 71 resolved as shift
+WARNING: shift/reduce conflict for SPA in state 71 resolved as shift
+WARNING: shift/reduce conflict for SSB in state 71 resolved as shift
+WARNING: reduce/reduce conflict in state 19 resolved using rule (word -> parenthese)
+WARNING: rejected rule (description -> parenthese) in state 19
+WARNING: reduce/reduce conflict in state 26 resolved using rule (word -> WORD)
+WARNING: rejected rule (description -> WORD) in state 26
