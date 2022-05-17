@@ -1,6 +1,6 @@
 from owlready2 import *
 
-path = "/home/fabrice/sessions/projet/knowledge/labs/pipeline/owl/example.owl"
+path = "owl/ontology_v2.owl"
 
 onto = get_ontology("file://"+path).load()
 
