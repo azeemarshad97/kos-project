@@ -28,17 +28,17 @@ def createTriplet(res):
     triplets.append([first[0],"type",first[1]])
     for element in res:
         if element[1] not in ["voir aussi", "voir"]:
-            triplets.append([first[0],":"+element[1],element[0]])
-            triplets.append([element[0], "rdf:type", element[1]])
+            triplets.append([first[0],element[1],element[0]])
+            triplets.append([element[0], "type", element[1]])
         else:
             for content in element[0]:
                 content = develop(content)
                 if len(content) == 1:
-                    triplets.append([first[0],":"+element[1],content[0][0]])
-                    triplets.append([content[0][0],"rdf:type",content[0][1]])
+                    triplets.append([first[0], element[1],content[0][0]])
+                    triplets.append([content[0][0],"type",content[0][1]])
                 else:
-                    triplets.append([first[0],":"+element[1],content[0][0]])
-                    triplets.append([content[0][0],"rdf:type",content[0][1]])
-                    triplets.append([first[0],":"+element[1],content[1][0]])
-                    triplets.append([content[1][0],"rdf:type",content[1][1]])
+                    triplets.append([first[0], element[1],content[0][0]])
+                    triplets.append([content[0][0],"type",content[0][1]])
+                    triplets.append([first[0], element[1],content[1][0]])
+                    triplets.append([content[1][0],"type",content[1][1]])
     return triplets
