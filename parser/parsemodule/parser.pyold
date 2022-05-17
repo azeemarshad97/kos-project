@@ -1,4 +1,7 @@
-from parsemodule.bracketParser import *
+import ply.yacc as yacc
+from parsemodule.lexer import *
+from tools import treduce, tplus, tparselist, ttolist
+from open_and_format import open_and_format, open_and_format2
 
 def p_start(p):
     '''entries : entry
@@ -34,8 +37,8 @@ def p_moreexp(p):
     p[0] = tparselist(p[1:])
 
 def p_component(p):
-    '''exp : common
-           | common_bold
+    '''exp : common_old
+           | common_new
            | place
            | descriptions 
            | person
@@ -44,13 +47,13 @@ def p_component(p):
            '''
     p[0] = p[1]
 
-def p_common_bold(p):
-    '''common_bold : SSTRONG words ESTRONG '''
-    p[0] = [p[2], "common_bold"]
+def p_common_new(p):
+    '''common_new : SSTRONG words ESTRONG '''
+    p[0] = [p[2], "common_new"]
 
-def p_common(p):
-    '''common : word'''
-    p[0] = [p[1], "common"]
+def p_common_old(p):
+    '''common_old : word'''
+    p[0] = [p[1], "common_old"]
 
 # TODO: mettre la parenthèse dans p[0]
 def p_place(p):
@@ -59,24 +62,19 @@ def p_place(p):
     # p[0] = [(p[2], "place")]
     p[0] = [p[2], "place"]
 
+# TODO: enlever le double word quand c'est possible
 def p_person(p):
     '''person : SSC word ESC
               | SSC descriptions ESC
               | SSC word SEP word ESC
               | SSC word SEP descriptions ESC
               | SSC descriptions SEP word ESC
-              | SSC descriptions SEP descriptions ESC
     '''
-    if p[3] in [",",";"]:
-        if isinstance(p[2],list):
-            p[2] = p[2][0]
-        if isinstance(p[4],list):
-            p[4] = p[4][0]
-        p[0] = [[[p[2],"person"],[p[4],"person"]], "persons"]
-    elif isinstance(p[2],list):
-        p[0] = [[[p[2][0], "person"]], "persons"]
+    if isinstance(p[1:],list):
+        # p[0] = [p[2][0], "person"]
+        p[0] = [p[2], "person"]
     else:
-        p[0] = [[[p[2], "person"]], "persons"]
+        p[0] = [p[2], "person"]
 
 
 def p_cross(p):

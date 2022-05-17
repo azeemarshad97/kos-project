@@ -1,5 +1,5 @@
 import ply.lex as lex
-from open_and_format import open_and_format
+from modules.open_and_format import open_and_format
 
 reserved = {
         "voir": "VOIR",
