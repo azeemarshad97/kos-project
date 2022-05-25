@@ -1,4 +1,5 @@
 from owlready2 import *
+from network import displayNetwork
 
 # path = "ontology_v2.owl"
 path = "ontology_and_index.owl"
@@ -10,7 +11,7 @@ query = """
            { 
                ?x a ontology_and_index:_Localisation.
                ?x ?y ?z.
-           }
+           } LIMIT 10
     """
 
 # LINK CODE
@@ -36,7 +37,8 @@ def formatResults(table):
     return nouvelle_table
 
 # SPARQL Query
-print(formatResults(list(default_world.sparql(query))))
+triplets = formatResults(list(default_world.sparql(query)))
 # print(len(list(default_world.sparql(query))[1]))
 # print(list(default_world.sparql(query))[1][2].name)
 
+displayNetwork(triplets)
