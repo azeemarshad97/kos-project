@@ -18,9 +18,13 @@ text = open(newname, "r").readlines()
 
 ignor = True
 tab = []
-
+"""
+Le fichier index contient du texte d'explication sur la structure de l'index
+Ce texte n'est pas intéressant vu qu'il ne peut pas être destructuré.
+On doit donc couper le texte du début.
+"""
 for line in text:
-    # first we ignor what's before the h5
+    # premièrement, on ignore ce qu'il y a avant h5
     if containsH5(line):
         ignor = False
     else:
@@ -29,7 +33,7 @@ for line in text:
             if res != None:
                 tab.append(createTriplet(res))
 
-# open the ontology
+# On va mettre les triplets dans l'ontologie
 path="owl/ontology_v2.owl"
 
 onto = get_ontology("file://"+path).load()
@@ -53,12 +57,3 @@ print(Classe_Page.instances())
 
 onto.save(file = "final.owl", format = "rdfxml")
 
-# existing instance in example.AestheticsValue: 
-#[example.ok, example.pretty, example.pretty_ugly, example.ugly]
-
-# SPARQL Query
-# print(list(default_world.sparql("""
-           # SELECT ?x
-           # { ?x a owl:Class . }
-    # """)))
-# replace : " ( d ’ )"
