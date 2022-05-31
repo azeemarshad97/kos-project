@@ -8,7 +8,7 @@
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"/>
 
-<owl:ObjectProperty rdf:about="#in_page">
+<owl:ObjectProperty rdf:about="#inPage">
   <rdfs:domain rdf:resource="#Nom"/>
   <rdfs:range rdf:resource="#_Page"/>
 </owl:ObjectProperty>
@@ -141,7 +141,7 @@
 
 <Nom rdf:about="#Achard">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#419"/>
+  <inPage rdf:resource="#419"/>
 </Nom>
 
 <rdf:Description rdf:about="#419">
@@ -166,7 +166,7 @@
 <rdf:Description rdf:about="#Aire">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#690"/>
+  <inPage rdf:resource="#690"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ayre">
@@ -182,7 +182,7 @@
 <rdf:Description rdf:about="#Aix-en-Provence ( F , dép. Bouches-du-Rhône , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#504"/>
+  <inPage rdf:resource="#504"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ex-en-Provence">
@@ -197,7 +197,7 @@
 
 <Nom rdf:about="#Alardet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#604"/>
+  <inPage rdf:resource="#604"/>
 </Nom>
 
 <Nom rdf:about="#Allardet">
@@ -240,7 +240,7 @@
 
 <Nom rdf:about="#Alliod">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#315"/>
+  <inPage rdf:resource="#315"/>
 </Nom>
 
 <Nom rdf:about="#Allio [ Aillod ]">
@@ -255,7 +255,7 @@
 <rdf:Description rdf:about="#Allondon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#20"/>
+  <inPage rdf:resource="#20"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Alondon">
@@ -281,7 +281,7 @@
 <rdf:Description rdf:about="#Ambilly ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ct. Annemasse )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#383"/>
+  <inPage rdf:resource="#383"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ambilliez">
@@ -306,7 +306,7 @@
 
 <Nom rdf:about="#Ambroysse">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#613"/>
+  <inPage rdf:resource="#613"/>
 </Nom>
 
 <rdf:Description rdf:about="#613">
@@ -316,7 +316,7 @@
 
 <Nom rdf:about="#Amici">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#141"/>
+  <inPage rdf:resource="#141"/>
 </Nom>
 
 <rdf:Description rdf:about="#141">
@@ -327,7 +327,7 @@
 <rdf:Description rdf:about="#506">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Page"/>
-  <in_page rdf:resource="#714 - 715"/>
+  <inPage rdf:resource="#714 - 715"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#509">
@@ -348,7 +348,7 @@
 <rdf:Description rdf:about="#Annemasse ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#644"/>
+  <inPage rdf:resource="#644"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#An ( n ) imasse">
@@ -374,7 +374,7 @@
 <rdf:Description rdf:about="#Aoste ( I , ch.-l. rég. Vallée d ’ Aoste )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#407"/>
+  <inPage rdf:resource="#407"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Hostaz">
@@ -424,7 +424,7 @@
 
 <Nom rdf:about="#Arnay">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#481"/>
+  <inPage rdf:resource="#481"/>
 </Nom>
 
 <Nom rdf:about="#Arnex">
@@ -456,7 +456,7 @@
 
 <Nom rdf:about="#Atru">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#540"/>
+  <inPage rdf:resource="#540"/>
 </Nom>
 
 <rdf:Description rdf:about="#431">
@@ -480,7 +480,7 @@
 <rdf:Description rdf:about="#Aubonne ( CH , ct. Vaud , distr. Morges )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#665"/>
+  <inPage rdf:resource="#665"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Aulbone">
@@ -521,7 +521,7 @@
 <rdf:Description rdf:about="#Auvergne ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Auvergnye">
@@ -542,7 +542,7 @@
 <rdf:Description rdf:about="#Avignon ( F , dép. Vaucluse , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#189"/>
+  <inPage rdf:resource="#189"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Avegnyon">
@@ -557,7 +557,7 @@
 
 <Nom rdf:about="#Aymon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#422"/>
+  <inPage rdf:resource="#422"/>
 </Nom>
 
 <Nom rdf:about="#Aymoz">
@@ -594,7 +594,7 @@
 <rdf:Description rdf:about="#Ballon ( F , dép. Ain , arr. Nantua , ct. Bellegarde-sur-Valserine , com. Lancrans )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#131"/>
+  <inPage rdf:resource="#131"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#130">
@@ -636,7 +636,7 @@
 
 <Nom rdf:about="#Barberiis ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#11"/>
+  <inPage rdf:resource="#11"/>
 </Nom>
 
 <rdf:Description rdf:about="#11">
@@ -654,7 +654,7 @@
 
 <Nom rdf:about="#Barral">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#648"/>
+  <inPage rdf:resource="#648"/>
 </Nom>
 
 <Nom rdf:about="#Barralis">
@@ -707,13 +707,13 @@
 
 <Nom rdf:about="#Bastion">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#665"/>
+  <inPage rdf:resource="#665"/>
 </Nom>
 
 <rdf:Description rdf:about="#Beaucaire ( F , dép. Gard , arr. Nîmes , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#189"/>
+  <inPage rdf:resource="#189"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Beaucayre">
@@ -741,7 +741,7 @@
 
 <Nom rdf:about="#Bectra">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#313"/>
+  <inPage rdf:resource="#313"/>
 </Nom>
 
 <Nom rdf:about="#Bestra ( z )">
@@ -774,7 +774,7 @@
 
 <Nom rdf:about="#Bellegarde ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#21"/>
+  <inPage rdf:resource="#21"/>
 </Nom>
 
 <rdf:Description rdf:about="#21">
@@ -784,7 +784,7 @@
 
 <Nom rdf:about="#Bené">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#484"/>
+  <inPage rdf:resource="#484"/>
 </Nom>
 
 <rdf:Description rdf:about="#484">
@@ -794,7 +794,7 @@
 
 <Nom rdf:about="#Bérard">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#439"/>
+  <inPage rdf:resource="#439"/>
 </Nom>
 
 <Nom rdf:about="#Berard">
@@ -821,7 +821,7 @@
 <rdf:Description rdf:about="#Bernex ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#537"/>
+  <inPage rdf:resource="#537"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#478">
@@ -836,7 +836,7 @@
 
 <Nom rdf:about="#Berod">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#248"/>
+  <inPage rdf:resource="#248"/>
 </Nom>
 
 <rdf:Description rdf:about="#248">
@@ -847,7 +847,7 @@
 <rdf:Description rdf:about="#Berry ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bierry">
@@ -857,7 +857,7 @@
 
 <Nom rdf:about="#Berthier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#506"/>
+  <inPage rdf:resource="#506"/>
 </Nom>
 
 <Nom rdf:about="#Berthollet [ Bertholet ]">
@@ -881,7 +881,7 @@
 <rdf:Description rdf:about="#Bienne ( CH , ct. Berne , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#626"/>
+  <inPage rdf:resource="#626"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Biellh">
@@ -926,7 +926,7 @@
 
 <Nom rdf:about="#Bienvenu">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#600"/>
+  <inPage rdf:resource="#600"/>
 </Nom>
 
 <Nom rdf:about="#Bienvenuz">
@@ -1001,7 +1001,7 @@
 
 <Nom rdf:about="#Bochy">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#46"/>
+  <inPage rdf:resource="#46"/>
 </Nom>
 
 <Nom rdf:about="#Bochi">
@@ -1016,7 +1016,7 @@
 <rdf:Description rdf:about="#Boëge ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#348"/>
+  <inPage rdf:resource="#348"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Boyge">
@@ -1037,7 +1037,7 @@
 <rdf:Description rdf:about="#Boisy ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez , com. Ballaison )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#214"/>
+  <inPage rdf:resource="#214"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Boysiez">
@@ -1074,7 +1074,7 @@
 
 <Nom rdf:about="#Bona ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#121"/>
+  <inPage rdf:resource="#121"/>
 </Nom>
 
 <rdf:Description rdf:about="#121">
@@ -1103,7 +1103,7 @@
 <rdf:Description rdf:about="#Bonneville ( F , dép. Haute-Savoie , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#662 - 663"/>
+  <inPage rdf:resource="#662 - 663"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#279">
@@ -1146,7 +1146,7 @@
 
 <Nom rdf:about="#Bordon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#145"/>
+  <inPage rdf:resource="#145"/>
 </Nom>
 
 <rdf:Description rdf:about="#22">
@@ -1166,7 +1166,7 @@
 
 <Nom rdf:about="#Bory">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#199"/>
+  <inPage rdf:resource="#199"/>
 </Nom>
 
 <rdf:Description rdf:about="#29">
@@ -1192,7 +1192,7 @@
 <rdf:Description rdf:about="#Bossey ( CH , ct. Vaud , distr. Nyon , com. Bogis-Bossey )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#370"/>
+  <inPage rdf:resource="#370"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#163p">
@@ -1208,7 +1208,7 @@
 <rdf:Description rdf:about="#Bossy ( CH , ct. Genève , com. Collex-Bossy )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#73"/>
+  <inPage rdf:resource="#73"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bossiez">
@@ -1232,7 +1232,7 @@
 <rdf:Description rdf:about="#Bourbonnais ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bourbo ( g ) noys">
@@ -1243,7 +1243,7 @@
 <rdf:Description rdf:about="#Bourdigny ( CH , ct. Genève , com. Satigny )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#522"/>
+  <inPage rdf:resource="#522"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Burdegnin">
@@ -1274,7 +1274,7 @@
 <rdf:Description rdf:about="#Bourg-en-Bresse ( F , dép. Ain , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#290"/>
+  <inPage rdf:resource="#290"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bourg">
@@ -1290,7 +1290,7 @@
 <rdf:Description rdf:about="#Bourgogne ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bourgognie">
@@ -1404,7 +1404,7 @@
 <rdf:Description rdf:about="#Brens ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez , com. Bons-en-Chablais )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#220"/>
+  <inPage rdf:resource="#220"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#220">
@@ -1415,7 +1415,7 @@
 <rdf:Description rdf:about="#Bretagne ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#96"/>
+  <inPage rdf:resource="#96"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bretagnye">
@@ -1431,7 +1431,7 @@
 <rdf:Description rdf:about="#Bretonnière ( La ) ( F , dép. Ain , arr. Gex , ct. Saint-Genis-Pouilly , com. Prévessin-Moëns )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#286"/>
+  <inPage rdf:resource="#286"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Brothoniere">
@@ -1446,7 +1446,7 @@
 
 <Nom rdf:about="#Briguet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#193"/>
+  <inPage rdf:resource="#193"/>
 </Nom>
 
 <rdf:Description rdf:about="#193">
@@ -1466,7 +1466,7 @@
 
 <Nom rdf:about="#Brochut">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#226"/>
+  <inPage rdf:resource="#226"/>
 </Nom>
 
 <Nom rdf:about="#Brochuti">
@@ -1542,13 +1542,13 @@
 <rdf:Description rdf:about="#Burdignin ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#248"/>
+  <inPage rdf:resource="#248"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bursinel ( CH , ct. Vaud , distr. Nyon )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#215"/>
+  <inPage rdf:resource="#215"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Bursene">
@@ -1594,7 +1594,7 @@
 
 <Nom rdf:about="#Carro ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#121"/>
+  <inPage rdf:resource="#121"/>
 </Nom>
 
 <Nom rdf:about="#Decarro">
@@ -1608,12 +1608,12 @@
 
 <Nom rdf:about="#Cartaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#665"/>
+  <inPage rdf:resource="#665"/>
 </Nom>
 
 <Nom rdf:about="#Cartellier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#289"/>
+  <inPage rdf:resource="#289"/>
 </Nom>
 
 <rdf:Description rdf:about="#289">
@@ -1624,7 +1624,7 @@
 <rdf:Description rdf:about="#Cartigny ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#533"/>
+  <inPage rdf:resource="#533"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Cartegnyez">
@@ -1649,7 +1649,7 @@
 
 <Nom rdf:about="#Castellion">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#591"/>
+  <inPage rdf:resource="#591"/>
 </Nom>
 
 <Nom rdf:about="#Chastillion">
@@ -1717,7 +1717,7 @@
 <rdf:Description rdf:about="#Chambéry ( F , dép. Savoie , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#724"/>
+  <inPage rdf:resource="#724"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Chambery">
@@ -1903,7 +1903,7 @@
 <rdf:Description rdf:about="#Chambésy ( CH , ct. Genève , com. Prégny-Chambésy )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#609"/>
+  <inPage rdf:resource="#609"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sainct-Beysiez">
@@ -1918,7 +1918,7 @@
 
 <Nom rdf:about="#Chambet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#569"/>
+  <inPage rdf:resource="#569"/>
 </Nom>
 
 <rdf:Description rdf:about="#569">
@@ -1928,7 +1928,7 @@
 
 <Nom rdf:about="#Chamois">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#314"/>
+  <inPage rdf:resource="#314"/>
 </Nom>
 
 <Nom rdf:about="#Chamoex">
@@ -1952,7 +1952,7 @@
 <rdf:Description rdf:about="#Champagne ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#309"/>
+  <inPage rdf:resource="#309"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Champagnye">
@@ -1968,7 +1968,7 @@
 <rdf:Description rdf:about="#Champel ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#313"/>
+  <inPage rdf:resource="#313"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#111">
@@ -2018,7 +2018,7 @@
 
 <Nom rdf:about="#Champereau">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#396"/>
+  <inPage rdf:resource="#396"/>
 </Nom>
 
 <Nom rdf:about="#Champereaulx">
@@ -2042,7 +2042,7 @@
 
 <Nom rdf:about="#Champon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#165"/>
+  <inPage rdf:resource="#165"/>
 </Nom>
 
 <rdf:Description rdf:about="#165">
@@ -2053,7 +2053,7 @@
 <rdf:Description rdf:about="#Chancy ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#167"/>
+  <inPage rdf:resource="#167"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Chanciez">
@@ -2100,7 +2100,7 @@
 
 <Nom rdf:about="#Chappon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#523"/>
+  <inPage rdf:resource="#523"/>
 </Nom>
 
 <rdf:Description rdf:about="#211">
@@ -2169,7 +2169,7 @@
 
 <Nom rdf:about="#Chauvet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#12"/>
+  <inPage rdf:resource="#12"/>
 </Nom>
 
 <rdf:Description rdf:about="#12">
@@ -2198,7 +2198,7 @@
 <rdf:Description rdf:about="#Chênex ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#579"/>
+  <inPage rdf:resource="#579"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Cheynex">
@@ -2236,7 +2236,7 @@
 
 <Nom rdf:about="#Chevron-Villette ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#268"/>
+  <inPage rdf:resource="#268"/>
 </Nom>
 
 <rdf:Description rdf:about="#268">
@@ -2252,7 +2252,7 @@
 <rdf:Description rdf:about="#Chézery ( F , dép. Ain , arr. Gex , ct. Thoiry , com. Chézery-Forens )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#396"/>
+  <inPage rdf:resource="#396"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Cheyserier">
@@ -2294,7 +2294,7 @@
 
 <Nom rdf:about="#Choudet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#60"/>
+  <inPage rdf:resource="#60"/>
 </Nom>
 
 <Nom rdf:about="#Choudeti">
@@ -2309,7 +2309,7 @@
 <rdf:Description rdf:about="#Choully ( CH , ct. Genève , com. Satigny )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#232"/>
+  <inPage rdf:resource="#232"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Chouliez">
@@ -2319,7 +2319,7 @@
 
 <Nom rdf:about="#Choupin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#512"/>
+  <inPage rdf:resource="#512"/>
 </Nom>
 
 <rdf:Description rdf:about="#512">
@@ -2388,7 +2388,7 @@
 <rdf:Description rdf:about="#Cluses ( F , dép. Haute-Savoie , arr. Bonneville , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#510"/>
+  <inPage rdf:resource="#510"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Cluse">
@@ -2430,7 +2430,7 @@
 <rdf:Description rdf:about="#Collex ( CH , ct. Genève , com. Collex-Bossy )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#177"/>
+  <inPage rdf:resource="#177"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Colex">
@@ -2476,7 +2476,7 @@
 <rdf:Description rdf:about="#Cologny ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#591"/>
+  <inPage rdf:resource="#591"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Collognyez">
@@ -2536,7 +2536,7 @@
 
 <Nom rdf:about="#Colomb">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#26"/>
+  <inPage rdf:resource="#26"/>
 </Nom>
 
 <Nom rdf:about="#Collomb ( i )">
@@ -2556,13 +2556,13 @@
 <rdf:Description rdf:about="#Colovrex ( CH , ct. Genève , com. Bellevue )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#569"/>
+  <inPage rdf:resource="#569"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Commugny ( CH , ct. Vaud , distr. Nyon )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#347"/>
+  <inPage rdf:resource="#347"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Commugnyez">
@@ -2578,7 +2578,7 @@
 <rdf:Description rdf:about="#Compesières ( CH , ct. Genève , com. Bardonnex )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#671 - 672"/>
+  <inPage rdf:resource="#671 - 672"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Compesieres">
@@ -2671,7 +2671,7 @@
 <rdf:Description rdf:about="#Confignon ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#555"/>
+  <inPage rdf:resource="#555"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Confegnion">
@@ -2702,7 +2702,7 @@
 <rdf:Description rdf:about="#Coppet ( CH , ct. Vaud , distr. Nyon )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#199"/>
+  <inPage rdf:resource="#199"/>
 </rdf:Description>
 
 <Nom rdf:about="#Cor">
@@ -2721,7 +2721,7 @@
 <rdf:Description rdf:about="#Corraterie ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#501"/>
+  <inPage rdf:resource="#501"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Corracterie">
@@ -2747,7 +2747,7 @@
 <rdf:Description rdf:about="#Coudre ( La ) ( CH , ct. Genève , com. Céligny )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#199"/>
+  <inPage rdf:resource="#199"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Couldra ( La )">
@@ -2776,13 +2776,13 @@
 
 <Nom rdf:about="#Favre">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#236"/>
+  <inPage rdf:resource="#236"/>
 </Nom>
 
 <rdf:Description rdf:about="#Coulouvrenière ( La ) ( CH , ct. et com. de Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#229"/>
+  <inPage rdf:resource="#229"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#229">
@@ -2792,7 +2792,7 @@
 
 <Nom rdf:about="#Cristin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#593"/>
+  <inPage rdf:resource="#593"/>
 </Nom>
 
 <rdf:Description rdf:about="#593">
@@ -2803,7 +2803,7 @@
 <rdf:Description rdf:about="#Croix ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Usinens )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#178"/>
+  <inPage rdf:resource="#178"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Croex">
@@ -2818,7 +2818,7 @@
 
 <Nom rdf:about="#Croset">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#249"/>
+  <inPage rdf:resource="#249"/>
 </Nom>
 
 <rdf:Description rdf:about="#249">
@@ -2829,7 +2829,7 @@
 <rdf:Description rdf:about="#Cruseilles ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ct. La Roche-sur-Foron )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#569"/>
+  <inPage rdf:resource="#569"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Cursil ( l ) ie">
@@ -2844,7 +2844,7 @@
 
 <Nom rdf:about="#Cursillat">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#300"/>
+  <inPage rdf:resource="#300"/>
 </Nom>
 
 <Nom rdf:about="#Cursilliat">
@@ -2902,7 +2902,7 @@
 
 <Nom rdf:about="#Cyro">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#330"/>
+  <inPage rdf:resource="#330"/>
 </Nom>
 
 <Nom rdf:about="#Giron">
@@ -2950,7 +2950,7 @@
 
 <Nom rdf:about="#Delagrange">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#388"/>
+  <inPage rdf:resource="#388"/>
 </Nom>
 
 <Nom rdf:about="#La Grange ( de )">
@@ -2973,7 +2973,7 @@
 <rdf:Description rdf:about="#Denens ( CH , ct. Vaud , distr. Morges )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#50"/>
+  <inPage rdf:resource="#50"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#50">
@@ -2983,7 +2983,7 @@
 
 <Nom rdf:about="#Depontoux">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#419"/>
+  <inPage rdf:resource="#419"/>
 </Nom>
 
 <Nom rdf:about="#Depont ( h ) oso">
@@ -3026,7 +3026,7 @@
 <rdf:Description rdf:about="#Dijon ( F , dép. Côte-d ’ Or , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#220"/>
+  <inPage rdf:resource="#220"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Metz">
@@ -3037,7 +3037,7 @@
 <rdf:Description rdf:about="#Dole ( F , dép. Jura , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#292"/>
+  <inPage rdf:resource="#292"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Dosle">
@@ -3063,7 +3063,7 @@
 <rdf:Description rdf:about="#Dombes ( La ) ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#555"/>
+  <inPage rdf:resource="#555"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Dombes">
@@ -3073,7 +3073,7 @@
 
 <Nom rdf:about="#Domegni">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#275"/>
+  <inPage rdf:resource="#275"/>
 </Nom>
 
 <rdf:Description rdf:about="#275">
@@ -3122,7 +3122,7 @@
 <rdf:Description rdf:about="#Draillant ( F , dép. Haute-Savoie , arr. et ct. Thonon-les-Bains )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#671"/>
+  <inPage rdf:resource="#671"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Drallien ( s )">
@@ -3158,7 +3158,7 @@
 <rdf:Description rdf:about="#Dranse">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#156"/>
+  <inPage rdf:resource="#156"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Drance">
@@ -3237,7 +3237,7 @@
 
 <Nom rdf:about="#Durhône">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#328"/>
+  <inPage rdf:resource="#328"/>
 </Nom>
 
 <Nom rdf:about="#Du Rosne">
@@ -3270,7 +3270,7 @@
 <rdf:Description rdf:about="#Eaux-Vives ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#312"/>
+  <inPage rdf:resource="#312"/>
 </rdf:Description>
 
 <Nom rdf:about="#Ecclesia ( de )">
@@ -3308,7 +3308,7 @@
 <rdf:Description rdf:about="#Éluiset ( L ’ ) ( F , dép. Haute-Savoie , arr. et ct Saint-Julien-en-Genevois , com. Viry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#606"/>
+  <inPage rdf:resource="#606"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Eluyset ( L ’ )">
@@ -3337,7 +3337,7 @@
 <rdf:Description rdf:about="#Ensisheim ( F , dép. Haut-Rhin , arr. Thann-Guebwiller , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#499"/>
+  <inPage rdf:resource="#499"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#A ( n ) gnesse">
@@ -3352,7 +3352,7 @@
 
 <Nom rdf:about="#Eschocti">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#313"/>
+  <inPage rdf:resource="#313"/>
 </Nom>
 
 <Nom rdf:about="#Espine">
@@ -3371,7 +3371,7 @@
 <rdf:Description rdf:about="#Essertet ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Viry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#593"/>
+  <inPage rdf:resource="#593"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Exertet">
@@ -3427,7 +3427,7 @@
 <rdf:Description rdf:about="#Etraz ( À-l ’ ) ( CH , ct. Genève , com. Russin )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#20"/>
+  <inPage rdf:resource="#20"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Lecra">
@@ -3443,7 +3443,7 @@
 <rdf:Description rdf:about="#Évian [ - les-Bains ] ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#60"/>
+  <inPage rdf:resource="#60"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Evyan">
@@ -3454,7 +3454,7 @@
 <rdf:Description rdf:about="#Évires ( F , dép. Haute-Savoie , arr. Annecy , ct. Annecy-le-Vieux )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#196"/>
+  <inPage rdf:resource="#196"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#196">
@@ -3465,7 +3465,7 @@
 <rdf:Description rdf:about="#Évordes ( CH , ct. Genève , com. Bardonnex )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#106"/>
+  <inPage rdf:resource="#106"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#106">
@@ -3494,7 +3494,7 @@
 
 <Nom rdf:about="#Falquet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#42"/>
+  <inPage rdf:resource="#42"/>
 </Nom>
 
 <rdf:Description rdf:about="#42">
@@ -3550,7 +3550,7 @@
 <rdf:Description rdf:about="#Faucigny ( F , anc. prov. du duché de Savoie )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#664"/>
+  <inPage rdf:resource="#664"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Foucegni ( er )">
@@ -3595,7 +3595,7 @@
 <rdf:Description rdf:about="#Feigères ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#245"/>
+  <inPage rdf:resource="#245"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Feygiere">
@@ -3611,7 +3611,7 @@
 <rdf:Description rdf:about="#Fenières ( F , dép. Ain , arr. Gex , ct. et com. Thoiry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#473"/>
+  <inPage rdf:resource="#473"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Feniere">
@@ -3710,7 +3710,7 @@
 
 <Nom rdf:about="#Flory">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#447"/>
+  <inPage rdf:resource="#447"/>
 </Nom>
 
 <rdf:Description rdf:about="#447">
@@ -3721,7 +3721,7 @@
 <rdf:Description rdf:about="#Flumet ( F , dép. Savoie , arr. Albertville , ct. Ugine )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#147"/>
+  <inPage rdf:resource="#147"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#147">
@@ -3731,7 +3731,7 @@
 
 <Nom rdf:about="#Fogasse">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#481"/>
+  <inPage rdf:resource="#481"/>
 </Nom>
 
 <Nom rdf:about="#Focasse">
@@ -3760,7 +3760,7 @@
 <rdf:Description rdf:about="#Fontainebleau ( F , dép. Seine-et-Marne , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Fontaienneblaux">
@@ -3770,7 +3770,7 @@
 
 <Nom rdf:about="#Forestier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#136"/>
+  <inPage rdf:resource="#136"/>
 </Nom>
 
 <rdf:Description rdf:about="#136">
@@ -3784,7 +3784,7 @@
 
 <Nom rdf:about="#Foron ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#120"/>
+  <inPage rdf:resource="#120"/>
 </Nom>
 
 <rdf:Description rdf:about="#120">
@@ -3807,7 +3807,7 @@
 
 <Nom rdf:about="#Foural">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#600"/>
+  <inPage rdf:resource="#600"/>
 </Nom>
 
 <Nom rdf:about="#Fou ( l ) ra">
@@ -3834,7 +3834,7 @@
 <rdf:Description rdf:about="#Franche-Comté ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#251"/>
+  <inPage rdf:resource="#251"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Franche-Compté">
@@ -3845,7 +3845,7 @@
 <rdf:Description rdf:about="#Franchises ( territoire de Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#707 - 708"/>
+  <inPage rdf:resource="#707 - 708"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Franchize">
@@ -3950,7 +3950,7 @@
 
 <Nom rdf:about="#Frauwruberger">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#117"/>
+  <inPage rdf:resource="#117"/>
 </Nom>
 
 <Nom rdf:about="#Frauvruberger">
@@ -3980,7 +3980,7 @@
 <rdf:Description rdf:about="#Frontenex ( CH , ct. Genève , com. Cologny et Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#175"/>
+  <inPage rdf:resource="#175"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Frontonex">
@@ -3990,7 +3990,7 @@
 
 <Nom rdf:about="#Furbi">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#592"/>
+  <inPage rdf:resource="#592"/>
 </Nom>
 
 <rdf:Description rdf:about="#592">
@@ -4008,7 +4008,7 @@
 
 <Nom rdf:about="#Fussiez [ Fusier ]">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#316"/>
+  <inPage rdf:resource="#316"/>
 </Nom>
 
 <rdf:Description rdf:about="#316">
@@ -4019,7 +4019,7 @@
 <rdf:Description rdf:about="#Gaillard ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#616"/>
+  <inPage rdf:resource="#616"/>
 </rdf:Description>
 
 <Nom rdf:about="#Galliard">
@@ -4068,7 +4068,7 @@
 
 <Nom rdf:about="#Gando">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#339"/>
+  <inPage rdf:resource="#339"/>
 </Nom>
 
 <rdf:Description rdf:about="#339">
@@ -4082,7 +4082,7 @@
 
 <Nom rdf:about="#Garmesse">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#255"/>
+  <inPage rdf:resource="#255"/>
 </Nom>
 
 <rdf:Description rdf:about="#255">
@@ -4112,7 +4112,7 @@
 
 <Nom rdf:about="#Genève-Boringe ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#17"/>
+  <inPage rdf:resource="#17"/>
 </Nom>
 
 <rdf:Description rdf:about="#17">
@@ -4138,7 +4138,7 @@
 
 <Nom rdf:about="#Gentil">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#349"/>
+  <inPage rdf:resource="#349"/>
 </Nom>
 
 <rdf:Description rdf:about="#518">
@@ -4157,7 +4157,7 @@
 <rdf:Description rdf:about="#Gex ( F , dép. Ain , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#719"/>
+  <inPage rdf:resource="#719"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ayex">
@@ -4311,7 +4311,7 @@
 
 <Nom rdf:about="#Julliard">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#48"/>
+  <inPage rdf:resource="#48"/>
 </Nom>
 
 <Nom rdf:about="#Gindre">
@@ -4320,7 +4320,7 @@
 
 <Nom rdf:about="#Girard">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#434"/>
+  <inPage rdf:resource="#434"/>
 </Nom>
 
 <rdf:Description rdf:about="#433">
@@ -4364,7 +4364,7 @@
 <rdf:Description rdf:about="#Grande Rive ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. et com. Évian-les-Bains )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#545"/>
+  <inPage rdf:resource="#545"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Grand Rive ( La )">
@@ -4380,7 +4380,7 @@
 <rdf:Description rdf:about="#Grand-Saconnex ( Le ) ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#378"/>
+  <inPage rdf:resource="#378"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sacconex-le-Grand">
@@ -4436,7 +4436,7 @@
 <rdf:Description rdf:about="#Grossaz ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Feigères )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#189"/>
+  <inPage rdf:resource="#189"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Grossa">
@@ -4446,7 +4446,7 @@
 
 <Nom rdf:about="#Gruyère ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#728"/>
+  <inPage rdf:resource="#728"/>
 </Nom>
 
 <rdf:Description rdf:about="#233">
@@ -4550,7 +4550,7 @@
 
 <Nom rdf:about="#Hugonier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#556"/>
+  <inPage rdf:resource="#556"/>
 </Nom>
 
 <Nom rdf:about="#Hugoneri ( i )">
@@ -4581,7 +4581,7 @@
 <rdf:Description rdf:about="#Île ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#592"/>
+  <inPage rdf:resource="#592"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Isla ( z )">
@@ -4666,12 +4666,12 @@
 
 <Nom rdf:about="#Jay">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#163"/>
+  <inPage rdf:resource="#163"/>
 </Nom>
 
 <Nom rdf:about="#Jessonis">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#39"/>
+  <inPage rdf:resource="#39"/>
 </Nom>
 
 <rdf:Description rdf:about="#39">
@@ -4685,7 +4685,7 @@
 
 <Nom rdf:about="#Joly">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#322"/>
+  <inPage rdf:resource="#322"/>
 </Nom>
 
 <rdf:Description rdf:about="#322">
@@ -4696,7 +4696,7 @@
 <rdf:Description rdf:about="#Jonzier ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Jonzier-Épagny )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#214"/>
+  <inPage rdf:resource="#214"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Jonviez">
@@ -4706,7 +4706,7 @@
 
 <Nom rdf:about="#Jordan">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#387"/>
+  <inPage rdf:resource="#387"/>
 </Nom>
 
 <rdf:Description rdf:about="#234">
@@ -4753,7 +4753,7 @@
 <rdf:Description rdf:about="#Lancy ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#308"/>
+  <inPage rdf:resource="#308"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Lanciez">
@@ -4773,7 +4773,7 @@
 
 <Nom rdf:about="#Langin ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#436"/>
+  <inPage rdf:resource="#436"/>
 </Nom>
 
 <rdf:Description rdf:about="#Lancy">
@@ -4804,7 +4804,7 @@
 <rdf:Description rdf:about="#Lausanne ( CH , ch.-l. ct. Vaud )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#649"/>
+  <inPage rdf:resource="#649"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#51">
@@ -4907,7 +4907,7 @@
 
 <Nom rdf:about="#Lenco ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#140"/>
+  <inPage rdf:resource="#140"/>
 </Nom>
 
 <Nom rdf:about="#Levet">
@@ -4938,7 +4938,7 @@
 
 <Nom rdf:about="#Liffort">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#315"/>
+  <inPage rdf:resource="#315"/>
 </Nom>
 
 <Nom rdf:about="#Lyffort">
@@ -4953,7 +4953,7 @@
 <rdf:Description rdf:about="#Logras ( F , dép. Ain , arr. Gex , ct. Thoiry , com. Péron ) , Logra">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#131"/>
+  <inPage rdf:resource="#131"/>
 </rdf:Description>
 
 <Nom rdf:about="#Lombard">
@@ -4966,13 +4966,13 @@
 
 <Nom rdf:about="#Lorin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#131"/>
+  <inPage rdf:resource="#131"/>
 </Nom>
 
 <rdf:Description rdf:about="#Lorraine ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#345"/>
+  <inPage rdf:resource="#345"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Lorrenne">
@@ -5047,7 +5047,7 @@
 <rdf:Description rdf:about="#Lyon ( F , dép. Rhône , ch.-l. dép. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#555"/>
+  <inPage rdf:resource="#555"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#173">
@@ -5082,7 +5082,7 @@
 <rdf:Description rdf:about="#Mâconnais ( F , rég. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#718"/>
+  <inPage rdf:resource="#718"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Masconnois">
@@ -5093,7 +5093,7 @@
 <rdf:Description rdf:about="#Madeleine ( La ) ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#329"/>
+  <inPage rdf:resource="#329"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Magdeleine ( La )">
@@ -5135,7 +5135,7 @@
 
 <Nom rdf:about="#Magnin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#300"/>
+  <inPage rdf:resource="#300"/>
 </Nom>
 
 <rdf:Description rdf:about="#185">
@@ -5166,7 +5166,7 @@
 <rdf:Description rdf:about="#Malagny ( CH , ct. Genève , com. Genthod ou F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Viry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#481"/>
+  <inPage rdf:resource="#481"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Malla ( i ) gnier">
@@ -5181,7 +5181,7 @@
 
 <Nom rdf:about="#Maneglier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#297"/>
+  <inPage rdf:resource="#297"/>
 </Nom>
 
 <rdf:Description rdf:about="#287">
@@ -5212,7 +5212,7 @@
 
 <Nom rdf:about="#Marchellin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#461"/>
+  <inPage rdf:resource="#461"/>
 </Nom>
 
 <rdf:Description rdf:about="#Marchilliez">
@@ -5228,7 +5228,7 @@
 <rdf:Description rdf:about="#Marignier ( F , dép. Haute-Savoie , arr. et ct. Bonneville )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#219p"/>
+  <inPage rdf:resource="#219p"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Marregen">
@@ -5252,7 +5252,7 @@
 
 <Nom rdf:about="#Marquet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#25"/>
+  <inPage rdf:resource="#25"/>
 </Nom>
 
 <rdf:Description rdf:about="#25">
@@ -5263,7 +5263,7 @@
 <rdf:Description rdf:about="#Marseille ( F , dép. Bouches-du-Rhône , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#680"/>
+  <inPage rdf:resource="#680"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Marsellie">
@@ -5311,7 +5311,7 @@
 
 <Nom rdf:about="#Masne">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#11"/>
+  <inPage rdf:resource="#11"/>
 </Nom>
 
 <rdf:Description rdf:about="#Massillier">
@@ -5330,7 +5330,7 @@
 <rdf:Description rdf:about="#Massongy ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#541"/>
+  <inPage rdf:resource="#541"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Massongier">
@@ -5351,7 +5351,7 @@
 <rdf:Description rdf:about="#Mategnin ( CH , ct. Genève , com. Meyrin )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#603"/>
+  <inPage rdf:resource="#603"/>
 </rdf:Description>
 
 <Nom rdf:about="#Matherii [ Matheri ]">
@@ -5368,7 +5368,7 @@
 
 <Nom rdf:about="#May ( von )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#679"/>
+  <inPage rdf:resource="#679"/>
 </Nom>
 
 <Nom rdf:about="#Meyg">
@@ -5453,7 +5453,7 @@
 <rdf:Description rdf:about="#Metz ( F , dép. Moselle , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#345"/>
+  <inPage rdf:resource="#345"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Mex">
@@ -5464,7 +5464,7 @@
 <rdf:Description rdf:about="#Meyrin ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#506"/>
+  <inPage rdf:resource="#506"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#403">
@@ -5483,7 +5483,7 @@
 <rdf:Description rdf:about="#Moëns ( F , dép. Ain , arr. Gex , ct. Saint-Genis-Pouilly , com. Prévessin-Moëns )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#598"/>
+  <inPage rdf:resource="#598"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Moings">
@@ -5509,7 +5509,7 @@
 <rdf:Description rdf:about="#Moirans [ - en-Montagne ] ( F , dép. Jura , arr. Saint-Claude , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#35"/>
+  <inPage rdf:resource="#35"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Moyren">
@@ -5519,7 +5519,7 @@
 
 <Nom rdf:about="#Mollie ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#457"/>
+  <inPage rdf:resource="#457"/>
 </Nom>
 
 <rdf:Description rdf:about="#449">
@@ -5534,7 +5534,7 @@
 
 <Nom rdf:about="#Monaton">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#472"/>
+  <inPage rdf:resource="#472"/>
 </Nom>
 
 <Nom rdf:about="#Monathon">
@@ -5576,7 +5576,7 @@
 <rdf:Description rdf:about="#Monthoux ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ct. Gaillard , com. Vétraz-Monthoux )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#33"/>
+  <inPage rdf:resource="#33"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Monthouz">
@@ -5596,13 +5596,13 @@
 <rdf:Description rdf:about="#Montpellier ( F , dép. Hérault , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#591"/>
+  <inPage rdf:resource="#591"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Montricher ( CH , ct. Vaud , distr. Morges )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#340"/>
+  <inPage rdf:resource="#340"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Montrechier">
@@ -5612,7 +5612,7 @@
 
 <Nom rdf:about="#Morand">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#238"/>
+  <inPage rdf:resource="#238"/>
 </Nom>
 
 <rdf:Description rdf:about="#238">
@@ -5634,7 +5634,7 @@
 
 <Nom rdf:about="#Morelet du Museau">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#444"/>
+  <inPage rdf:resource="#444"/>
 </Nom>
 
 <Nom rdf:about="#Morellet">
@@ -5653,13 +5653,13 @@
 
 <Nom rdf:about="#Moret">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#598"/>
+  <inPage rdf:resource="#598"/>
 </Nom>
 
 <rdf:Description rdf:about="#Morges ( CH , ct. Vaud. ch.-l. distr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#432"/>
+  <inPage rdf:resource="#432"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Morge">
@@ -5680,7 +5680,7 @@
 <rdf:Description rdf:about="#Mourex ( F , dép. Ain , arr. et ct. Gex , com. Grilly )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#463"/>
+  <inPage rdf:resource="#463"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#463">
@@ -5690,7 +5690,7 @@
 
 <Nom rdf:about="#Mouriannaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#509"/>
+  <inPage rdf:resource="#509"/>
 </Nom>
 
 <Nom rdf:about="#Mouroz">
@@ -5729,7 +5729,7 @@
 <rdf:Description rdf:about="#Mulhouse ( F , dép. Haut-Rhin , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#532"/>
+  <inPage rdf:resource="#532"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Menuze">
@@ -5757,7 +5757,7 @@
 <rdf:Description rdf:about="#Nantua ( F , dép. Ain , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#290"/>
+  <inPage rdf:resource="#290"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Narniez">
@@ -5772,7 +5772,7 @@
 
 <Nom rdf:about="#Nergaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#15"/>
+  <inPage rdf:resource="#15"/>
 </Nom>
 
 <rdf:Description rdf:about="#15">
@@ -5783,7 +5783,7 @@
 <rdf:Description rdf:about="#Nernier ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#700"/>
+  <inPage rdf:resource="#700"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Nernyer">
@@ -5809,7 +5809,7 @@
 <rdf:Description rdf:about="#Neuchâtel ( CH , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#656"/>
+  <inPage rdf:resource="#656"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Neuf ( z ) chatel">
@@ -5840,12 +5840,12 @@
 <rdf:Description rdf:about="#Neydens ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#196"/>
+  <inPage rdf:resource="#196"/>
 </rdf:Description>
 
 <Nom rdf:about="#Nicolas">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#245"/>
+  <inPage rdf:resource="#245"/>
 </Nom>
 
 <Nom rdf:about="#Nycolas">
@@ -5859,13 +5859,13 @@
 
 <Nom rdf:about="#Noé">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#294"/>
+  <inPage rdf:resource="#294"/>
 </Nom>
 
 <rdf:Description rdf:about="#Norcier ( F , dép. Haute-Savoie , arr. , ct. et com. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#433"/>
+  <inPage rdf:resource="#433"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Norsier">
@@ -5876,7 +5876,7 @@
 <rdf:Description rdf:about="#Novéry ( F , Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois , com. Minzier )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#631 - 632"/>
+  <inPage rdf:resource="#631 - 632"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Novery">
@@ -5902,7 +5902,7 @@
 <rdf:Description rdf:about="#Nyon ( CH , ct. Vaud , ch.-l. distr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#592"/>
+  <inPage rdf:resource="#592"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Nyons">
@@ -5947,7 +5947,7 @@
 <rdf:Description rdf:about="#Pâquis ( Les ) ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#320"/>
+  <inPage rdf:resource="#320"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Pasquiers ( Les )">
@@ -5963,7 +5963,7 @@
 <rdf:Description rdf:about="#Paris ( F , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#580"/>
+  <inPage rdf:resource="#580"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Parys">
@@ -5994,7 +5994,7 @@
 <rdf:Description rdf:about="#Passeiry ( CH , ct. Genève , com. Chancy )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#167"/>
+  <inPage rdf:resource="#167"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Passeyrier">
@@ -6008,7 +6008,7 @@
 
 <Nom rdf:about="#Patru">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#125"/>
+  <inPage rdf:resource="#125"/>
 </Nom>
 
 <rdf:Description rdf:about="#601">
@@ -6027,7 +6027,7 @@
 <rdf:Description rdf:about="#Pays-Bas">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#189"/>
+  <inPage rdf:resource="#189"/>
 </rdf:Description>
 
 <Nom rdf:about="#Peccollacte">
@@ -6052,7 +6052,7 @@
 
 <Nom rdf:about="#Pellisson">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#724"/>
+  <inPage rdf:resource="#724"/>
 </Nom>
 
 <Nom rdf:about="#Pillisson">
@@ -6065,7 +6065,7 @@
 
 <Nom rdf:about="#Penloux ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#196"/>
+  <inPage rdf:resource="#196"/>
 </Nom>
 
 <Nom rdf:about="#Pennet">
@@ -6099,7 +6099,7 @@
 <rdf:Description rdf:about="#Péron ( F , dép. Ain , arr. Gex , ct. Thoiry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#21"/>
+  <inPage rdf:resource="#21"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Peron">
@@ -6127,7 +6127,7 @@
 
 <Nom rdf:about="#Petit">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#411"/>
+  <inPage rdf:resource="#411"/>
 </Nom>
 
 <rdf:Description rdf:about="#411">
@@ -6148,7 +6148,7 @@
 <rdf:Description rdf:about="#Petit-Saconnex ( Le ) ( CH , ct. et com. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#402"/>
+  <inPage rdf:resource="#402"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sacconex-le-Petit">
@@ -6178,7 +6178,7 @@
 
 <Nom rdf:about="#Philippe">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#595"/>
+  <inPage rdf:resource="#595"/>
 </Nom>
 
 <rdf:Description rdf:about="#288">
@@ -6203,7 +6203,7 @@
 
 <Nom rdf:about="#Piardi">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#253"/>
+  <inPage rdf:resource="#253"/>
 </Nom>
 
 <rdf:Description rdf:about="#253">
@@ -6231,7 +6231,7 @@
 <rdf:Description rdf:about="#Planeta ( La ) ( I , rég. Sicile , lieu non localisé )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#48"/>
+  <inPage rdf:resource="#48"/>
 </rdf:Description>
 
 <Nom rdf:about="#Plonjon">
@@ -6244,7 +6244,7 @@
 
 <Nom rdf:about="#Pochat">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#506"/>
+  <inPage rdf:resource="#506"/>
 </Nom>
 
 <Nom rdf:about="#Pochacti">
@@ -6258,7 +6258,7 @@
 
 <Nom rdf:about="#Pollier [ Polier ]">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#48"/>
+  <inPage rdf:resource="#48"/>
 </Nom>
 
 <rdf:Description rdf:about="#Pomier ( F , dép. Haute-Savoir , arr. et ct. Saint-Julien-en-Genevois , com. Présilly )">
@@ -6277,12 +6277,12 @@
 
 <Nom rdf:about="#Pontyt ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#189"/>
+  <inPage rdf:resource="#189"/>
 </Nom>
 
 <Nom rdf:about="#Porral">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#599"/>
+  <inPage rdf:resource="#599"/>
 </Nom>
 
 <Nom rdf:about="#Porra">
@@ -6306,7 +6306,7 @@
 
 <Nom rdf:about="#Portaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#367"/>
+  <inPage rdf:resource="#367"/>
 </Nom>
 
 <rdf:Description rdf:about="#367">
@@ -6348,7 +6348,7 @@
 <rdf:Description rdf:about="#Presinge ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#370"/>
+  <inPage rdf:resource="#370"/>
 </rdf:Description>
 
 <Nom rdf:about="#Presle ( de )">
@@ -6362,7 +6362,7 @@
 <rdf:Description rdf:about="#Prévessin ( F , dép. Ain , arr. Gex , ct. Saint-Genis-Pouilly , com. Prévessin-Moëns )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#322"/>
+  <inPage rdf:resource="#322"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Prevesin">
@@ -6383,7 +6383,7 @@
 <rdf:Description rdf:about="#Provence ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#387"/>
+  <inPage rdf:resource="#387"/>
 </rdf:Description>
 
 <Nom rdf:about="#Provode">
@@ -6415,7 +6415,7 @@
 <rdf:Description rdf:about="#Puplinge ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#50"/>
+  <inPage rdf:resource="#50"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Pygney">
@@ -6446,7 +6446,7 @@
 <rdf:Description rdf:about="#Rapperswil ( CH , ct. Saint-Gall , circ. él. See-Gaster , com. Rapperswil-Jona ) , Rapisville">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#434"/>
+  <inPage rdf:resource="#434"/>
 </rdf:Description>
 
 <Nom rdf:about="#Ravoierey ( de )">
@@ -6476,7 +6476,7 @@
 <rdf:Description rdf:about="#Reignier ( F , dép. Haute-Savoie , arr. Saint-Julien-en-Genevois , ct. La Roche-sur-Foron , com. Reignier-Ésery )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#451"/>
+  <inPage rdf:resource="#451"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Regnyez">
@@ -6487,7 +6487,7 @@
 <rdf:Description rdf:about="#Reims ( F , dép. Marne , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#453"/>
+  <inPage rdf:resource="#453"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Rens">
@@ -6517,7 +6517,7 @@
 
 <Nom rdf:about="#Renon ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#644"/>
+  <inPage rdf:resource="#644"/>
 </Nom>
 
 <Nom rdf:about="#Renone ( de )">
@@ -6532,7 +6532,7 @@
 <rdf:Description rdf:about="#Reyvroz ( F , dép. Haute-Savoie , arr. et ct. Thonon-les-Bains )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#607"/>
+  <inPage rdf:resource="#607"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Reyvroz ( Le )">
@@ -6550,7 +6550,7 @@
 
 <Nom rdf:about="#Rilliet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#20"/>
+  <inPage rdf:resource="#20"/>
 </Nom>
 
 <Nom rdf:about="#Rilliez">
@@ -6571,7 +6571,7 @@
 
 <Nom rdf:about="#Rivolles">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#613"/>
+  <inPage rdf:resource="#613"/>
 </Nom>
 
 <rdf:Description rdf:about="#Roan">
@@ -6587,7 +6587,7 @@
 <rdf:Description rdf:about="#Roche [ - sur-Foron ] ( La ) ( F , dép. Haute-Savoie , arr. Bonneville , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#578p"/>
+  <inPage rdf:resource="#578p"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#La Roche">
@@ -6612,7 +6612,7 @@
 
 <Nom rdf:about="#Roget">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#36"/>
+  <inPage rdf:resource="#36"/>
 </Nom>
 
 <rdf:Description rdf:about="#6">
@@ -6633,7 +6633,7 @@
 <rdf:Description rdf:about="#Rolle ( CH , ct. Vaud , distr. Nyon )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#535"/>
+  <inPage rdf:resource="#535"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Rosle">
@@ -6667,7 +6667,7 @@
 
 <Nom rdf:about="#Rosset">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#603"/>
+  <inPage rdf:resource="#603"/>
 </Nom>
 
 <Nom rdf:about="#Rosseti">
@@ -6685,7 +6685,7 @@
 <rdf:Description rdf:about="#Rouen ( F , dép. Seine-Maritime , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#230"/>
+  <inPage rdf:resource="#230"/>
 </rdf:Description>
 
 <Nom rdf:about="#Rouge">
@@ -6732,7 +6732,7 @@
 <rdf:Description rdf:about="#Rumilly ( F , dép. Haute-Savoie , arr. Annecy , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#617"/>
+  <inPage rdf:resource="#617"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#558">
@@ -6754,7 +6754,7 @@
 
 <Nom rdf:about="#Rys ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#343"/>
+  <inPage rdf:resource="#343"/>
 </Nom>
 
 <rdf:Description rdf:about="#Ryve">
@@ -6765,7 +6765,7 @@
 <rdf:Description rdf:about="#Sablières ( Les ) ( CH , ct. Genève , com. Satigny )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#268"/>
+  <inPage rdf:resource="#268"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sabliere">
@@ -6794,7 +6794,7 @@
 <rdf:Description rdf:about="#Saconnex ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#25"/>
+  <inPage rdf:resource="#25"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sacconex">
@@ -6839,7 +6839,7 @@
 <rdf:Description rdf:about="#Saint-Claude ( F , dép. Jura , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#510"/>
+  <inPage rdf:resource="#510"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sainct-Claude">
@@ -6860,7 +6860,7 @@
 <rdf:Description rdf:about="#Saint-Gervais ( CH , ct. et com. Genève ) , Sainct-Gervex">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#428"/>
+  <inPage rdf:resource="#428"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#40">
@@ -6916,7 +6916,7 @@
 <rdf:Description rdf:about="#Saint-Jean-de-Gonville ( F , dép. Ain , arr. Gex , ct. Thoiry )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#282"/>
+  <inPage rdf:resource="#282"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sainct-Johan-de-Gonvillie">
@@ -6926,13 +6926,13 @@
 
 <Nom rdf:about="#Saint-Jeoire ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#595"/>
+  <inPage rdf:resource="#595"/>
 </Nom>
 
 <rdf:Description rdf:about="#Saint-Julien-en-Genevois ( F , dép. Haute-Savoie , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#652"/>
+  <inPage rdf:resource="#652"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sainct-Jullin">
@@ -6968,7 +6968,7 @@
 <rdf:Description rdf:about="#Saint-Maurice ( CH , ct. Valais , ch.-l. distr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#510"/>
+  <inPage rdf:resource="#510"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sainct-Maurys">
@@ -6992,7 +6992,7 @@
 <rdf:Description rdf:about="#Saint-Nicolas-de-Port ( F , dép. Meurthe-et-Moselle , arr. Nancy , ct. Jarville-la-Malgrange )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#22"/>
+  <inPage rdf:resource="#22"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Saint-Nycolas">
@@ -7003,7 +7003,7 @@
 <rdf:Description rdf:about="#Salins [ - les-Bains ] ( F , dép. Jura , arr. Dole , ct. Arbois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#584"/>
+  <inPage rdf:resource="#584"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Salin">
@@ -7014,7 +7014,7 @@
 <rdf:Description rdf:about="#Sallanches ( F , dép. Haute-Savoie , arr. Bonneville , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#220"/>
+  <inPage rdf:resource="#220"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Sallanche">
@@ -7047,7 +7047,7 @@
 
 <Nom rdf:about="#Savoie ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#709"/>
+  <inPage rdf:resource="#709"/>
 </Nom>
 
 <Nom rdf:about="#Savoye">
@@ -7060,12 +7060,12 @@
 
 <Nom rdf:about="#Scarron">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#405"/>
+  <inPage rdf:resource="#405"/>
 </Nom>
 
 <Nom rdf:about="#Serex">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#408"/>
+  <inPage rdf:resource="#408"/>
 </Nom>
 
 <rdf:Description rdf:about="#244">
@@ -7085,13 +7085,13 @@
 
 <Nom rdf:about="#Serve">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#408"/>
+  <inPage rdf:resource="#408"/>
 </Nom>
 
 <rdf:Description rdf:about="#Seyssel ( F , dép. Ain , arr. Belley , ct. Hauteville-Lompnes et dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#536"/>
+  <inPage rdf:resource="#536"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Se ( y ) sel">
@@ -7145,7 +7145,7 @@
 <rdf:Description rdf:about="#Sion ( CH , ch.-l. ct. Valais )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#243"/>
+  <inPage rdf:resource="#243"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Syon ( s )">
@@ -7171,7 +7171,7 @@
 <rdf:Description rdf:about="#Spire ( D , land Rhénanie-Palatinat , ville indépendante , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#117p"/>
+  <inPage rdf:resource="#117p"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Speyr">
@@ -7191,7 +7191,7 @@
 
 <Nom rdf:about="#Suchet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#383"/>
+  <inPage rdf:resource="#383"/>
 </Nom>
 
 <rdf:Description rdf:about="#Sion">
@@ -7201,7 +7201,7 @@
 
 <Nom rdf:about="#Taberlet">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#530"/>
+  <inPage rdf:resource="#530"/>
 </Nom>
 
 <rdf:Description rdf:about="#530">
@@ -7211,7 +7211,7 @@
 
 <Nom rdf:about="#Taborin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#581"/>
+  <inPage rdf:resource="#581"/>
 </Nom>
 
 <rdf:Description rdf:about="#581">
@@ -7229,7 +7229,7 @@
 
 <Nom rdf:about="#Tappognyer [ Taponnier ]">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#123"/>
+  <inPage rdf:resource="#123"/>
 </Nom>
 
 <rdf:Description rdf:about="#123">
@@ -7240,7 +7240,7 @@
 <rdf:Description rdf:about="#Ternier ( F , dép. Haute-Savoie , arr. , ct. et com. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#719"/>
+  <inPage rdf:resource="#719"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ternir">
@@ -7302,7 +7302,7 @@
 <rdf:Description rdf:about="#Thoiry ( F , dép. Ain , arr. Gex , ch.-l. ct. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#631"/>
+  <inPage rdf:resource="#631"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Thoyrier">
@@ -7432,7 +7432,7 @@
 
 <Nom rdf:about="#Tillier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#666"/>
+  <inPage rdf:resource="#666"/>
 </Nom>
 
 <rdf:Description rdf:about="#666">
@@ -7468,13 +7468,13 @@
 <rdf:Description rdf:about="#Toulon ( F , dép. Var , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#343"/>
+  <inPage rdf:resource="#343"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Touraine ( F , anc. prov. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#286"/>
+  <inPage rdf:resource="#286"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#T ( h ) orenne">
@@ -7485,7 +7485,7 @@
 <rdf:Description rdf:about="#Tours ( F , dép. Indre-et-Loire , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#286"/>
+  <inPage rdf:resource="#286"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Toutesvilles">
@@ -7513,12 +7513,12 @@
 
 <Nom rdf:about="#Trenchent">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#596"/>
+  <inPage rdf:resource="#596"/>
 </Nom>
 
 <Nom rdf:about="#Tripillori">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#491"/>
+  <inPage rdf:resource="#491"/>
 </Nom>
 
 <rdf:Description rdf:about="#486">
@@ -7549,7 +7549,7 @@
 <rdf:Description rdf:about="#Troinex ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#265"/>
+  <inPage rdf:resource="#265"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Troignex">
@@ -7580,7 +7580,7 @@
 <rdf:Description rdf:about="#Troyes ( F , dép. Aube , ch.-l. arr. )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#309"/>
+  <inPage rdf:resource="#309"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Troys">
@@ -7600,7 +7600,7 @@
 <rdf:Description rdf:about="#Turin ( I , rég. Piémont , ville métropolitaine )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#685"/>
+  <inPage rdf:resource="#685"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#240">
@@ -7611,7 +7611,7 @@
 <rdf:Description rdf:about="#Usinens ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#178"/>
+  <inPage rdf:resource="#178"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Usenens">
@@ -7630,13 +7630,13 @@
 <rdf:Description rdf:about="#Vallon ( F , dép. Haute-Savoie , arr. et ct. Thonon-les-Bains , com. Bellevaux )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#348"/>
+  <inPage rdf:resource="#348"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vandœuvres ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#322"/>
+  <inPage rdf:resource="#322"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vendovre ( s )">
@@ -7675,7 +7675,7 @@
 
 <Nom rdf:about="#Verdon">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#49"/>
+  <inPage rdf:resource="#49"/>
 </Nom>
 
 <Nom rdf:about="#Verjon">
@@ -7697,7 +7697,7 @@
 <rdf:Description rdf:about="#Versoix ( CH , ct. Genève )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#263"/>
+  <inPage rdf:resource="#263"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Versoex">
@@ -7723,7 +7723,7 @@
 <rdf:Description rdf:about="#Vessy ( CH , ct. Genève , com. Veyrier )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#186"/>
+  <inPage rdf:resource="#186"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vessiez">
@@ -7734,7 +7734,7 @@
 <rdf:Description rdf:about="#Vevey ( CH , ct. Vaud , ch.-l. distr. Riviera-Pays-d ’ Enhaut )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#418"/>
+  <inPage rdf:resource="#418"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vivey">
@@ -7765,7 +7765,7 @@
 
 <Nom rdf:about="#Viandaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#376"/>
+  <inPage rdf:resource="#376"/>
 </Nom>
 
 <rdf:Description rdf:about="#376">
@@ -7793,7 +7793,7 @@
 
 <Nom rdf:about="#Viennois">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#561"/>
+  <inPage rdf:resource="#561"/>
 </Nom>
 
 <Nom rdf:about="#Viennesii">
@@ -7813,7 +7813,7 @@
 <rdf:Description rdf:about="#Villeneuve ( CH , ct. et com. Genève ) [ extension du quartier de Saint-Gervais ]">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#131"/>
+  <inPage rdf:resource="#131"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Ville Nove">
@@ -7824,7 +7824,7 @@
 <rdf:Description rdf:about="#Villeneuve ( CH , ct. Vaud , distr. Aigle )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#173"/>
+  <inPage rdf:resource="#173"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Villenove">
@@ -7844,7 +7844,7 @@
 
 <Nom rdf:about="#Vincent">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#495 - 496"/>
+  <inPage rdf:resource="#495 - 496"/>
 </Nom>
 
 <rdf:Description rdf:about="#495 - 496">
@@ -7870,7 +7870,7 @@
 <rdf:Description rdf:about="#Viuz-en-Sallaz ( F , dép. Haute-Savoie , arr. et ct. Bonneville )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#99"/>
+  <inPage rdf:resource="#99"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vyeu-en-Salla">
@@ -7891,13 +7891,13 @@
 <rdf:Description rdf:about="#Vuache ( montagne française )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#130"/>
+  <inPage rdf:resource="#130"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vulbens ( F , dép. Haute-Savoie , arr. et ct. Saint-Julien-en-Genevois )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <in_page rdf:resource="#131"/>
+  <inPage rdf:resource="#131"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Vulben">
@@ -7923,7 +7923,7 @@
 
 <Nom rdf:about="#Vuy">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#245"/>
+  <inPage rdf:resource="#245"/>
 </Nom>
 
 <Nom rdf:about="#Vu ( c ) yt">
@@ -7945,7 +7945,7 @@
 
 <Nom rdf:about="#Wandart">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <in_page rdf:resource="#182p"/>
+  <inPage rdf:resource="#182p"/>
 </Nom>
 
 <Nom rdf:about="#Wander">

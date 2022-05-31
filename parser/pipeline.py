@@ -53,7 +53,7 @@ Classe_Page = classes[30]
 
 # définition des propriétés
 with onto:
-    class in_page(ObjectProperty):
+    class inPage(ObjectProperty):
         domain = [ClasseNom]
         range = [Classe_Page]
 
@@ -67,8 +67,6 @@ def getType(element, tab_type):
             elif triplet[2] == "page":
                 return Classe_Page(triplet[0].replace(" ", ""))
     return None
-
-# tab = [[["Charles","type","person"],["23", "type", "page"], ["Charles", "page", "23"]]]
 
 tab_type = [] 
 for ligne in tab:
@@ -89,7 +87,7 @@ for ligne in tab:
             Any = getType(triplet[0], tab_type)
             page = Classe_Page(triplet[2])
             if Any != None:
-                Any.in_page = [page]
+                Any.inPage = [page]
 
 print(Classe_Page.instances())
  
