@@ -3,20 +3,27 @@ import subprocess
 from modules.module import *
 from owlready2 import *
 
-# prend le nom du fichier
-if len(sys.argv) == 1:
-    name = "Index_1543.docx"
-else:
-    name = sys.argv[1]
-newname = name[:-4]+"html"
+# # prend le nom du fichier
+# if len(sys.argv) == 1:
+    # name = "Index_1543.docx"
+# else:
+    # name = sys.argv[1]
+# newname = name[:-4]+"html"
+# 
+# # conversion en html
+# subprocess.run(["pandoc", name, "-o", newname])
+# 
+# # conversion en triplets
+# text = open(newname, "r").readlines()
 
-# conversion en html
-subprocess.run(["pandoc", name, "-o", newname])
+text = open("Index_1543.html", "r").readlines()
 
-# conversion en triplets
-text = open(newname, "r").readlines()
+# text = ["<p><strong>abattoir</strong>, eschorcherie, 417, 420 ; voir aussi boucherie</p>"]
 
-ignor = True
+# text = ["<p><span class='smallcaps'>Alardet, Allardet</span>, (†), mons<sup>r</sup>, 598, 604</p>"]
+
+# ignor = True
+ignor = False
 tab = []
 """
 Le fichier index contient du texte d'explication sur la structure de l'index
@@ -33,6 +40,7 @@ for line in text:
             if res != None:
                 tab.append(createTriplet(res))
 
+
 # On va mettre les triplets dans l'ontologie
 path="owl/ontology_v2.owl"
 
@@ -43,6 +51,31 @@ ClasseNom = classes[24]
 Classe_Localisation = classes[29]
 Classe_Page = classes[30]
 
+# définition des propriétés
+with onto:
+    class in_page(ObjectProperty):
+        domain = [ClasseNom]
+        range = [Classe_Page]
+
+def getType(element, tab_type):
+    for triplet in tab_type:
+        if element == triplet[0]:
+            if triplet[2] == "person":
+                return ClasseNom(triplet[0].replace(" ( d ’ )",""))
+            elif triplet[2] == "place":
+                return Classe_Localisation(triplet[0])
+            elif triplet[2] == "page":
+                return Classe_Page(triplet[0].replace(" ", ""))
+    return None
+
+# tab = [[["Charles","type","person"],["23", "type", "page"], ["Charles", "page", "23"]]]
+
+tab_type = [] 
+for ligne in tab:
+    for triplet in ligne:
+        if triplet[1] == "type":
+            tab_type.append(triplet)
+
 for ligne in tab:
     for triplet in ligne:
         if triplet[1] == "type":
@@ -52,8 +85,13 @@ for ligne in tab:
                 Classe_Localisation(triplet[0])
             elif triplet[2] == "page":
                 Classe_Page(triplet[0].replace(" ", ""))
+        elif triplet[1] == "page":
+            Any = getType(triplet[0], tab_type)
+            page = Classe_Page(triplet[2])
+            if Any != None:
+                Any.in_page = [page]
 
 print(Classe_Page.instances())
-
+ 
 onto.save(file = "final.owl", format = "rdfxml")
 
