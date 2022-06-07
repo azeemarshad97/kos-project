@@ -1,6 +1,7 @@
 # from tools import tcreateTriplet
 from parsemodule.parser import *
 from modules.network import *
+from modules.location_parser import *
 
 def containsH5(line):
     if "</h5>" in line:
@@ -25,6 +26,15 @@ def createTriplet(res):
     res = develop(res)
     triplets = []
     first = res.pop(0) 
+    if first[1] == "place" and "(" in first[0]:
+        table_place = place([[first[0]]])
+        if len(table_place) > 0:
+            first = table_place.pop(0)
+            # enlever la liste vide à la fin de la liste
+            table_place.pop()
+            for element in table_place:
+                if element != []:
+                    triplets.append([first[0], element[1], element[0]])
     triplets.append([first[0],"type",first[1]])
     for element in res:
         if element[1] not in ["voir aussi", "voir"]:

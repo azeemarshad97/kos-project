@@ -1,12 +1,10 @@
-import numpy as np
-import pylab as plt
-from matplotlib import animation
-
 france = [['Yvoire ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )', 'place'], ['Yvoy ( es ) re', 'place'], ['le seigneur de -', 'descriptions'], [[[['Saint-Jeoire ( de )', 'descriptions'], 'person']], 'voir']]
 
 suisse = [['Appenzell , ( CH , ct. )', 'place'], ['Apensept', 'place']]
 
+suisse2 = [['Chambésy , ( CH , ct. Vaud , distr. Nyon )', 'place'], ['Carroge', 'place']]
 
+autre = [['Mategnin ( CH , ct. Genève , com. Meyrin )']]
 
 def place(element):
     place_parsed = []
@@ -27,38 +25,38 @@ def place(element):
                     resource_tmp = splited[index]
                     if resource_tmp != ')':
                         place_parsed.append([resource_tmp, "canton"])
-                        place_parsed.append([resource_tmp, "common"])
+                        place_parsed.append([resource_tmp, "commune"])
                     if 'distr.' in element[0][0]:
                         index = splited.index('distr.') + 1
                         resource_tmp = splited[index]
                         if resource_tmp != ')':
-                            place_parsed.append([resource_tmp, "district"])
+                            place_parsed.append([resource_tmp, "indistrict"])
 
                 else:
                     index = splited.index('ct.')+1
                     resource_tmp = splited[index]
                     if resource_tmp != ')':
-                        place_parsed.append([resource_tmp, "canton"])
+                        place_parsed.append([resource_tmp, "inCanton"])
                         if 'com.' in element[0][0]:
                             index = splited.index('com.') + 1
                             resource_tmp = splited[index]
                             if resource_tmp != ')':
-                                place_parsed.append([resource_tmp, "common"])
+                                place_parsed.append([resource_tmp, "inCommune"])
                         if 'distr. et com.' in element[0][0]:
                             index = splited.index('com.') + 1
                             resource_tmp = splited[index]
                             if resource_tmp != ')':
-                                place_parsed.append([resource_tmp, "district"])
+                                place_parsed.append([resource_tmp, "inDistrict"])
                         elif 'distr.' in element[0][0]:
                             index = splited.index('distr.') + 1
                             resource_tmp = splited[index]
                             if resource_tmp != ')':
-                                place_parsed.append([resource_tmp, "district"])
+                                place_parsed.append([resource_tmp, "inDistrict"])
                             elif resource_tmp == ')':
-                                place_parsed.append([splited[0], "district"])
+                                place_parsed.append([splited[0], "isDistrict"])
 
                     elif resource_tmp == ')':
-                        place_parsed.append([splited[0], "canton"])
+                        place_parsed.append([splited[0], "isCanton"])
 
 
         if 'F ,' in element[0][0]:
@@ -67,7 +65,7 @@ def place(element):
             if 'dép.' in element[0][0]:
                 index = splited.index('dép.')+1
                 resource_tmp = splited[index]
-                place_parsed.append([resource_tmp, "inDépartement"])
+                place_parsed.append([resource_tmp, "inDepartement"])
 
         if 'I ,' in element[0][0]:
             place_parsed.append(["Italie", "inCountry"])
@@ -75,13 +73,13 @@ def place(element):
             if 'rég.' in element[0][0]:
                 index = splited.index('rég.')+1
                 resource_tmp = splited[index]
-                place_parsed.append([resource_tmp, "inRégion"])
+                place_parsed.append([resource_tmp, "inRegion"])
 
     place_parsed.append(element[1:])
 
     return place_parsed
 
 
-print(place(france))
-
-print(place(suisse))
+# print(place(france))
+# print(place(suisse2))
+# print(place(autre))
