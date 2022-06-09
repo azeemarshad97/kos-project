@@ -19,11 +19,6 @@ def docx_to_html():
 
 def html_to_triple():
     # text = open("Index_1543.html", "r").readlines()
-    # text = []
-    # text.append("<p><em>Mategnin (CH, ct. Genève, com. Meyrin)</em>, 603</p>")
-    # text.append("<p><em>Massongy (F, dép. Haute-Savoie, arr. Thonon-les-Bains, ct. Sciez)</em>, <em>Massongier</em>, <em>Massongiez</em>, 168, 364, 420, 541</p>")
-    # text = ["<p><em>Abondance (F, dép. Haute-Savoie, arr. Thonon-les-Bains, ct. Évian-les-Bains)</em>, <em>Habundance</em></p>"]
-    # text = ["<p><em>Aire</em> [riv. franco-suisse], <em>Ayre</em>, 690</p>"]
     text = ["<p><em>Passeiry (CH, ct. Genève, com. Chancy)</em>, <em>Passeyrier</em>, 167</p>"]
 
     # ignor = True
