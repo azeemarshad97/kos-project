@@ -3,8 +3,12 @@ import subprocess
 from modules.module import *
 from owlready2 import *
 
+
 def docx_to_html():
-    # prend le nom du fichier
+    """
+    prend le fichier entrée en docx
+    puis le transforme en html
+    """
     if len(sys.argv) == 1:
         name = "Index_1543.docx"
     else:
@@ -16,6 +20,7 @@ def docx_to_html():
 
     # conversion en triplets
     text = open(newname, "r").readlines()
+
 
 def html_to_triple():
     # text = open("Index_1543.html", "r").readlines()
@@ -34,13 +39,13 @@ def html_to_triple():
         if containsH5(line):
             ignor = False
         else:
-            if ignor == False and not containsH5(line):
+            if ignor is False and not containsH5(line):
                 res = parser.parse(line)
-                print(res)
-                if res != None:
+                if res is not None:
                     tab.append(createTriplet(res))
     print(tab)
     return tab
+
 
 def getType(element, tab_type, Classes):
     for triplet in tab_type:
@@ -89,40 +94,63 @@ def getType(element, tab_type, Classes):
 32 ontology_v2._PointEau
 """
 
-def triple_to_owl(tab):
-    print(tab)
-    # On va mettre les triplets dans l'ontologie
-    path="owl/ontology_v2.owl"
 
+def getOntology(path):
+    # on ouvre l'ontologie
     onto = get_ontology("file://"+path).load()
+    return onto
 
+
+def getClasses(onto):
+    # on y extrait les classes
     classes = list(onto.classes())
+    # on crée les classes
+    Classes = {
+            "Nom": classes[24],
+            "Localisation": classes[29],
+            "Page": classes[30],
+            "Canton": classes[4],
+            "Commune": classes[4],
+            "Pays": classes[31],
+            "Departement": classes[11]
+            }
+    return Classes
 
-    Classes = {"Nom" : classes[24], "Localisation" : classes[29], "Page" : classes[30], "Canton" : classes[4], "Commune" : classes[4], "Pays" : classes[31], "Departement" : classes[11]}
 
-    # définition des propriétés
+def define_properties(onto, Classes):
+    # Définition des propriétés
     with onto:
         class inPage(ObjectProperty):
             domain = [Classes["Nom"]]
             range = [Classes["Localisation"]]
+
         class inCanton(ObjectProperty):
             domain = [Classes["Localisation"]]
             range = [Classes["Canton"]]
+
         class inCommune(ObjectProperty):
             domain = [Classes["Localisation"]]
             range = [Classes["Commune"]]
+
         class inCountry(ObjectProperty):
             domain = [Classes["Localisation"]]
             range = [Classes["Pays"]]
+
         class inDepartement(ObjectProperty):
             domain = [Classes["Localisation"]]
             range = [Classes["Departement"]]
+
+
+def create_table_of_type(tab):
     # création de la table des types
-    tab_type = [] 
+    tab_type = []
     for ligne in tab:
         for triplet in ligne:
             if triplet[1] == "type":
                 tab_type.append(triplet)
+    return tab
+
+def create_instance_and_relation(tab,Classes,tab_type):
     # création des instances et des relations
     for ligne in tab:
         for triplet in ligne:
@@ -136,7 +164,7 @@ def triple_to_owl(tab):
             elif triplet[1] == "page":
                 Any = getType(triplet[0], tab_type, Classes)
                 page = Classes["Page"](triplet[2])
-                if Any != None:
+                if Any is not None:
                     Any.inPage = [page]
             elif triplet[1] == "inCanton":
                 loc = Classes["Localisation"](triplet[0])
@@ -154,8 +182,20 @@ def triple_to_owl(tab):
                 loc = Classes["Localisation"](triplet[0])
                 canton = Classes["Departement"](triplet[2])
                 canton.inDepartement = [loc]
-    # enregistrement de l'ontologie
-    onto.save(file = "final.owl", format = "rdfxml")
+
+
+def triple_to_owl(tab):
+    """
+    une fonction qui va transformer le contenu html_to_triple
+    en structure dans un premier temps puis crée des triplets
+    """
+    onto = getOntology("ontology_v2.owl")
+    Classes = getClasses(onto)
+    define_properties(onto, Classes)
+    tab_type = create_table_of_type(tab)
+    create_instance_and_relation(tab, Classes, tab_type)
+    onto.save(file="final.owl", format="rdfxml")
+
 
 tab = html_to_triple()
 triple_to_owl(tab)

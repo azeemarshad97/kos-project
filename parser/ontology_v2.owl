@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Armee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Armee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Bourgeois -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Bourgeois">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Canton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Canton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Clerge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Clerge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Commune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Commune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Condamnation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Condamnation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Delit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Delit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Departement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#District">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Ecrit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Ecrit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Foritification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Foritification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Edifice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Honorable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Honorable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Hopital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Hopital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Edifice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Imposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Imposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Metier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Metier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Monnaie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Monnaie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Monsieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Monsieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Noble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Noble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Nom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Nom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Prenom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Prenom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Seigneur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#Seigneur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#GroupeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Edifice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Edifice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Finance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Finance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Etatique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Localisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Localisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Occupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Occupation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Page -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Page"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Pays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Pays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_PointEau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_PointEau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Localisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Terre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#_Localisation"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
