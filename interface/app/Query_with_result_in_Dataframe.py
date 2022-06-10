@@ -3,21 +3,7 @@ from network import displayNetwork
 import pandas as pd
 
 path = "ontology_v2.owl"
-# path = "ontology_and_index.owl"
-
 onto = get_ontology("file://"+path).load()
-
-query = """
-           SELECT ?x ?y ?z WHERE
-           {
-               ?x ?y ?z.
-           } LIMIT 10
-    """
-
-# LINK CODE
-"""
-is : 6
-"""
 
 
 # Fonction de formatage d'element
@@ -72,9 +58,8 @@ def getColumns(query):
     return colonnes
 
 
-def query_with_result_in_DataFrame():
+def getResults(query):
     values = formatResults(list(default_world.sparql(query)))
     columns = getColumns(query)
     return pd.DataFrame(values, columns=columns)
 
-query_with_result_in_DataFrame()
