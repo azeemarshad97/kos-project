@@ -2,23 +2,29 @@ from owlready2 import *
 from app.network import displayNetwork
 
 # path = "ontology_v2.owl"
-path = "app/data/ontology_and_index.owl"
+path = "app/data/full_localisation.owl"
 
 onto = get_ontology("file://"+path).load()
 
+prefix = "PREFIX kos: <http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#>"
+
 query1 = """
+        PREFIX kos: <http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#>
            SELECT ?x ?y ?z WHERE
            { 
-               ?x a ontology_and_index:_Localisation.
+               ?x a kos:_Localisation.
                ?x ?y ?z.
            } LIMIT 10
     """
-
+query2= """
+           SELECT ?x ?y ?z where 
+            { ?x kos:inDepartement ?y. 
+            ?x ?y ?z. }
+            """
 # LINK CODE
 """
 is : 6
 """
-
 # Fonction de formatage d'element
 def formatElement(element):
     if element == 6:
@@ -38,14 +44,15 @@ def formatResults(table):
 
 
 def getResults(query):
-    triplets = formatResults(list(default_world.sparql(query)))
-    return displayNetwork(triplets)
+    print(f'query: {query}')
 
-
-
-# SPARQL Query
-# triplets = formatResults(list(default_world.sparql(query)))
-# # print(len(list(default_world.sparql(query))[1]))
-# # print(list(default_world.sparql(query))[1][2].name)
-
-# displayNetwork(triplets)
+    L = list(default_world.sparql(prefix+query))
+    print(f'L: {L}')
+    triplets = formatResults(L)
+    print(f'triplets: {triplets}')
+    final_triplets = []
+    for triplet in triplets:
+        if triplet[2] != "NamedIndividual":
+            final_triplets.append(triplet) 
+    print(f'final_triplets: {final_triplets}')
+    return displayNetwork(final_triplets)

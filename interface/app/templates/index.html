@@ -23,26 +23,35 @@
     </header>
 
     <div class="content align-middle">
-        <h2 class="text-center">Insérer votre requête SPARQL</h2>
-        <!-- <input type="email" class="form-control" id="inputQuery" aria-describedby="emailHelp">
-        <textarea class="span6" method ="post" type="input" action="#" id="input-query" name="input-query" rows="6" cols="50" placeholder="Votre requête ici"
-            required></textarea>
-        <button class="btn btn-primary" id="query-submit" value="query-submit"> Rechercher</button> -->
+        <h2 class="text-center">Insérez votre requête SPARQL</h2>
 
-        <!-- <form action="{{ url_for('submit') }}" method="post">
-            <textarea name="input-query" class="span6" rows="6" cols="50" placeholder="Votre requête ici"></textarea>
-            <input type="submit" class="btn btn-light" id="submit-query">
-        </form> -->
-        <div class="d-flex justify-content-center" style="margin-right: 18%;">
+        <div class="d-flex justify-content-center" style="margin-right: 28%;">
             <form action="{{ url_for('submit') }}" method="post">
-                <textarea name="input-query" class="form-control form-outline" id="textAreaExample" style="min-width: 200%; min-height: 150%;"></textarea>
+                <textarea name="input-query" class="form-control form-outline" id="textAreaExample" onkeydown="insertTab(this, event);" style="min-width: 250%; min-height: 150%;"></textarea>
                 <!-- <label class="form-label" for="textAreaExample">Requête</label> -->
-                <input type="submit" class="btn btn-light d-flex justify-content-center" style="margin-left: 70%; margin-top: 20px;" id="submit-query" >
+                <input type="submit" class="btn btn-light d-flex justify-content-center" style="margin-left: 92%; margin-top: 20px;" id="submit-query" >
             </form>
         </div>
+        <div id="table-container " class="table-wrap table position-absolute top-25 start-25 translate-middle">
+            {{table | safe}}
+        </div>
+
 
     </div>
 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          Un projet de l'Université de Genève
+          <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+          <img src="/static/logo.svg" class="image-fluid" height="40">
+        </div>
+        <!-- Copyright -->
+    </footer>
+      <!-- Footer -->
 </div>
+
 
 {% endblock %}
