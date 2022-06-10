@@ -152,7 +152,6 @@
 <rdf:Description rdf:about="#Passeiry">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
-  <inPage rdf:resource="#167"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="#Suisse">
