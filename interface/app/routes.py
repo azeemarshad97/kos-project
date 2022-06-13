@@ -2,6 +2,7 @@ from flask import render_template, request, url_for, redirect, make_response
 from app import app
 import app.queries as qr
 import app.network as nw
+import app.Query_with_result_in_Dataframe as qr2
 
 
 
@@ -9,20 +10,8 @@ import app.network as nw
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    if request.method == 'POST':
-        # we should get query string
-        # process it here
-        # return the html file 
-        # query = request.form["input-query"]
-        query = request.form.get("input-quer")
 
-        qr.getResults(query)
-
-
-        # return redirect(url_for("network"))
-        return render_template("network.html")
-    else:
-        return render_template('index.html',title='Home')
+    return render_template('index.html',title='Home')
 
 
 @app.route('/submit', methods=['POST','GET'])
@@ -30,12 +19,11 @@ def submit():
     query = request.form.get("input-query")
     print(f'query: {query}')    
 
-    res_html = qr.getResults(query)
+    res_df = qr2.getResults(query)
+    # res_df = qr.getResults(query)
 
-    print(f'res_html: {res_html}')
-
-    # return redirect(url_for("network"))
-    return res_html
+    #* for graph ----> return res_df 
+    return render_template('index.html',table=res_df)
 
 
 

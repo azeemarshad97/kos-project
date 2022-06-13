@@ -1,9 +1,25 @@
 from owlready2 import *
-from network import displayNetwork
+from app.network import displayNetwork
 import pandas as pd
 
-path = "ontology_v2.owl"
+path = "app/data/full_localisation.owl"
 onto = get_ontology("file://"+path).load()
+
+prefix = "PREFIX kos: <http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#>"
+
+query1 = """
+        PREFIX kos: <http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#>
+           SELECT ?x ?y ?z WHERE
+           { 
+               ?x a kos:_Localisation.
+               ?x ?y ?z.
+           } LIMIT 10
+    """
+query2= """
+           SELECT ?x ?y ?z where 
+            { ?x kos:inDepartement ?y. 
+            ?x ?y ?z. }
+            """
 
 
 # Fonction de formatage d'element
@@ -59,7 +75,7 @@ def getColumns(query):
 
 
 def getResults(query):
-    values = formatResults(list(default_world.sparql(query)))
+    values = formatResults(list(default_world.sparql(prefix+query)))
     columns = getColumns(query)
-    return pd.DataFrame(values, columns=columns)
+    return pd.DataFrame(values, columns=columns).to_html(index=False)
 

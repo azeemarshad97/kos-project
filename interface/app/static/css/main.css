@@ -11,17 +11,17 @@
 
 /* Custom default button */
 
-body{
+body {
     /* background-image: radial-gradient(circle, #a4c2ee, #afbcef, #bdb5ed, #ccade7, #dca4dc); */
     background-image: radial-gradient(circle, #98e9ff, #99e1ff, #a3d8ff, #b4ceff, #c7c2ff);
 }
 
 
 
-#nav1
-{  
-    background-color:#F00; /*whichever you want*/
-    opacity: 0.5; 
+#nav1 {
+    background-color: #F00;
+    /*whichever you want*/
+    opacity: 0.5;
 }
 
 #submit-query {
@@ -38,8 +38,9 @@ body{
 .navbar-custom {
     height: 100px;
     text-align: center;
-  }
-.navbarbrand-custom{
+}
+
+.navbarbrand-custom {
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -49,6 +50,53 @@ body{
     margin-right: auto;
 }
 
-.form-outline{
+.form-outline {
     justify-content: center;
+}
+
+#table-container {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#table-container>div {
+    margin: 0 auto;
+}
+
+.table-wrap {
+    height: 400px;
+    width: 400px;
+    overflow-y: auto;
+    text-align: center;
+}
+th {text-align:center}
+table {
+    border: 1px solid green;
+    border-collapse: collapse;
+    width:100%;
+}
+
+table td {
+    border: 1px solid green;
+}
+
+table td.shrink {
+    white-space:nowrap
+}
+table td.expand {
+    width: 99%
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
