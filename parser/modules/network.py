@@ -1,5 +1,4 @@
 from pyvis.network import Network
-# from pyvis.options import Options
 import random
 import csv
 
