@@ -20,7 +20,7 @@
 
 <owl:ObjectProperty rdf:about="#inCommune">
   <rdfs:domain rdf:resource="#_Localisation"/>
-  <rdfs:range rdf:resource="#Canton"/>
+  <rdfs:range rdf:resource="#Commune"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#inCountry">
@@ -52,6 +52,8 @@
 <owl:Class rdf:about="#_Terre">
   <rdfs:subClassOf rdf:resource="#_Localisation"/>
 </owl:Class>
+
+<owl:Class rdf:about="#_Localisation"/>
 
 <owl:Class rdf:about="#Clerge">
   <rdfs:subClassOf rdf:resource="#_Occupation"/>
@@ -136,8 +138,6 @@
 <owl:Class rdf:about="#Seigneur">
   <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
 </owl:Class>
-
-<owl:Class rdf:about="#_Localisation"/>
 
 <owl:Class rdf:about="#_Page"/>
 
@@ -894,10 +894,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Vandœuvres">
+<Commune rdf:about="#Vandœuvres">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Bessinge"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Bissinge">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1205,10 +1205,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Bogis-Bossey">
+<Commune rdf:about="#Bogis-Bossey">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Bossey"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#163p">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1225,10 +1225,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Collex-Bossy">
+<Commune rdf:about="#Collex-Bossy">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Collex"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Bossiez">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1263,10 +1263,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Satigny">
+<Commune rdf:about="#Satigny">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Saint-Âpre"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Burdegnin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -1882,10 +1882,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Prégny-Chambésy">
+<Commune rdf:about="#Prégny-Chambésy">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Chambésy"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Sainct-Beysiez">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2025,11 +2025,11 @@
   <rdf:type rdf:resource="#_Page"/>
 </rdf:Description>
 
-<Canton rdf:about="#Chancy">
+<Commune rdf:about="#Chancy">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
   <inCommune rdf:resource="#Passeiry"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Chanciez">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2127,10 +2127,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Vernier">
+<Commune rdf:about="#Vernier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Châtelaine"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Chatellaennaz">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2309,11 +2309,11 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Céligny">
+<Commune rdf:about="#Céligny">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
   <inCommune rdf:resource="#Coudre"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Cité">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2429,11 +2429,11 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Cologny">
+<Commune rdf:about="#Cologny">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
   <inCommune rdf:resource="#Frontenex"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Collognyez">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2503,10 +2503,10 @@
   <rdf:type rdf:resource="#_Page"/>
 </rdf:Description>
 
-<Canton rdf:about="#Bellevue">
+<Commune rdf:about="#Bellevue">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Colovrex"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Commugny">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2528,10 +2528,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Bardonnex">
+<Commune rdf:about="#Bardonnex">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Évordes"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Compesieres">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -3349,10 +3349,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Russin">
+<Commune rdf:about="#Russin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Etraz"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Lecra">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -4981,10 +4981,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Genthod">
+<Commune rdf:about="#Genthod">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Malagny"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Malla ( i ) gnier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -5158,10 +5158,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Meyrin">
+<Commune rdf:about="#Meyrin">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Mategnin"/>
-</Canton>
+</Commune>
 
 <Nom rdf:about="#Matherii [ Matheri ]">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -6189,10 +6189,10 @@
   <inCanton rdf:resource="#Rapperswil"/>
 </Canton>
 
-<Canton rdf:about="#Rapperswil-Jona">
+<Commune rdf:about="#Rapperswil-Jona">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Rapperswil"/>
-</Canton>
+</Commune>
 
 <Nom rdf:about="#Ravoierey ( de )">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -7008,11 +7008,11 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Thônex">
+<Commune rdf:about="#Thônex">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#_Localisation"/>
   <inCommune rdf:resource="#Villette"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#586">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -7350,10 +7350,10 @@
   <rdf:type rdf:resource="#_Localisation"/>
 </rdf:Description>
 
-<Canton rdf:about="#Veyrier">
+<Commune rdf:about="#Veyrier">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <inCommune rdf:resource="#Vessy"/>
-</Canton>
+</Commune>
 
 <rdf:Description rdf:about="#Vessiez">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>

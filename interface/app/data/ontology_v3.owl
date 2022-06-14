@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"
+         xmlns="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"/>
+
+<owl:Class rdf:about="#Armee">
+  <rdfs:subClassOf rdf:resource="#_Etatique"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Etatique"/>
+
+<owl:Class rdf:about="#Bourgeois">
+  <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GroupeSocial"/>
+
+<owl:Class rdf:about="#Canton">
+  <rdfs:subClassOf rdf:resource="#_Terre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Terre">
+  <rdfs:subClassOf rdf:resource="#_Localisation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Clerge">
+  <rdfs:subClassOf rdf:resource="#_Occupation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Occupation"/>
+
+<owl:Class rdf:about="#Commune">
+  <rdfs:subClassOf rdf:resource="#_Terre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Condamnation">
+  <rdfs:subClassOf rdf:resource="#_Etatique"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Delit">
+  <rdfs:subClassOf rdf:resource="#_Etatique"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Departement">
+  <rdfs:subClassOf rdf:resource="#_Terre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#District">
+  <rdfs:subClassOf rdf:resource="#_Terre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ecrit"/>
+
+<owl:Class rdf:about="#Foritification">
+  <rdfs:subClassOf rdf:resource="#_Edifice"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Edifice"/>
+
+<owl:Class rdf:about="#Honorable">
+  <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hopital">
+  <rdfs:subClassOf rdf:resource="#_Edifice"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Imposition">
+  <rdfs:subClassOf rdf:resource="#_Finance"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Finance">
+  <rdfs:subClassOf rdf:resource="#_Etatique"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Metier">
+  <rdfs:subClassOf rdf:resource="#_Occupation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Monnaie">
+  <rdfs:subClassOf rdf:resource="#_Finance"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Monsieur">
+  <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Noble">
+  <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nom">
+  <rdfs:subClassOf rdf:resource="#_Personne"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Personne"/>
+
+<owl:Class rdf:about="#Office">
+  <rdfs:subClassOf rdf:resource="#_Occupation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Prenom">
+  <rdfs:subClassOf rdf:resource="#_Personne"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Seigneur">
+  <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_Localisation"/>
+
+<owl:Class rdf:about="#_Page"/>
+
+<owl:Class rdf:about="#_Pays">
+  <rdfs:subClassOf rdf:resource="#_Terre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#_PointEau">
+  <rdfs:subClassOf rdf:resource="#_Localisation"/>
+</owl:Class>
+</rdf:RDF>

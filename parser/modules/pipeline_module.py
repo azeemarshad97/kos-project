@@ -54,15 +54,15 @@ def html_to_triple(file_name):
     return tab
 
 
-def getType(element, tab_type, Classes):
+def getType(onto, element, tab_type):
     for triplet in tab_type:
         if element == triplet[0]:
             if triplet[2] == "person":
-                return Classes["Nom"](triplet[0].replace(" ( d ’ )",""))
+                return get_class(onto, "Nom")(triplet[0].replace(" ( d ’ )", ""))
             elif triplet[2] == "place":
-                return Classes["Localisation"](triplet[0])
+                return get_class(onto, "Location")(triplet[0])
             elif triplet[2] == "page":
-                return Classes["Page"](triplet[0].replace(" ", ""))
+                return get_class(onto, "Page")(triplet[0].replace(" ", ""))
     return None
 
 """
@@ -108,44 +108,27 @@ def get_ontology_from_file(path):
     return onto
 
 
-def get_classes(onto):
-    # on y extrait les classes
-    classes = list(onto.classes())
-    # on crée les classes
-    Classes = {
-            "Nom": classes[24],
-            "Localisation": classes[29],
-            "Page": classes[30],
-            "Canton": classes[4],
-            "Commune": classes[4],
-            "Pays": classes[31],
-            "Departement": classes[11]
-            }
-    return Classes
+def property_creator(onto, name, domain_name, range_name):
+    """
+    This is a exotic custom function that create
+    a class from the given parameters
+    it was made to create simply and dynamicaly
+    new properties
+    """
+    Property = type(name, (ObjectProperty, ), {
+       "namespace": onto,
+       "domain": [get_class(onto, domain_name)],
+       "range": [get_class(onto, range_name)]
+        })
 
 
-def define_properties(onto, Classes):
-    # Définition des propriétés
-    with onto:
-        class inPage(ObjectProperty):
-            domain = [Classes["Nom"]]
-            range = [Classes["Localisation"]]
-
-        class inCanton(ObjectProperty):
-            domain = [Classes["Localisation"]]
-            range = [Classes["Canton"]]
-
-        class inCommune(ObjectProperty):
-            domain = [Classes["Localisation"]]
-            range = [Classes["Commune"]]
-
-        class inCountry(ObjectProperty):
-            domain = [Classes["Localisation"]]
-            range = [Classes["Pays"]]
-
-        class inDepartement(ObjectProperty):
-            domain = [Classes["Localisation"]]
-            range = [Classes["Departement"]]
+def define_properties(onto):
+    # Creation of properties 
+    property_creator(onto, "inPage", "Nom", "Localisation")
+    property_creator(onto, "inCanton", "Localisation", "Canton")
+    property_creator(onto, "inCommune", "Localisation", "Commune")
+    property_creator(onto, "inCountry", "Localisation", "Pays")
+    property_creator(onto, "inDepartement", "Localisation", "Departement")
 
 
 def create_table_of_type(tab):
@@ -157,37 +140,39 @@ def create_table_of_type(tab):
                 tab_type.append(triplet)
     return tab
 
-def create_instance_and_relation(tab,Classes,tab_type):
+
+# 1 TODO refactor create_instance_and_relation to simplify the creation processus
+def create_instance_and_relation(onto, tab, tab_type):
     # création des instances et des relations
     for ligne in tab:
         for triplet in ligne:
             if triplet[1] == "type":
                 if triplet[2] == "person":
-                    Classes["Nom"](triplet[0].replace(" ( d ’ )",""))
+                    get_class(onto, "Nom")(triplet[0].replace(" ( d ’ )", ""))
                 elif triplet[2] == "place":
-                    Classes["Localisation"](triplet[0])
+                    get_class(onto, "Localisation")(triplet[0])
                 elif triplet[2] == "page":
-                    Classes["Page"](triplet[0].replace(" ", ""))
+                    get_class(onto, "Page")(triplet[0].replace(" ", ""))
             elif triplet[1] == "page":
-                Any = getType(triplet[0], tab_type, Classes)
-                page = Classes["Page"](triplet[2])
+                Any = getType(onto, triplet[0], tab_type)
+                page = get_class(onto, "Page")(triplet[2])
                 if Any is not None:
                     Any.inPage = [page]
             elif triplet[1] == "inCanton":
-                loc = Classes["Localisation"](triplet[0])
-                canton = Classes["Canton"](triplet[2])
+                loc = get_class(onto, "Localisation")(triplet[0])
+                canton = get_class(onto, "Canton")(triplet[2])
                 canton.inCanton = [loc]
             elif triplet[1] == "inCommune":
-                loc = Classes["Localisation"](triplet[0])
-                canton = Classes["Commune"](triplet[2])
+                loc = get_class(onto, "Localisation")(triplet[0])
+                canton = get_class(onto, "Commune")(triplet[2])
                 canton.inCommune = [loc]
             elif triplet[1] == "inCountry":
-                loc = Classes["Localisation"](triplet[0])
-                canton = Classes["Pays"](triplet[2])
+                loc = get_class(onto, "Localisation")(triplet[0])
+                canton = get_class(onto, "Pays")(triplet[2])
                 canton.inCountry = [loc]
             elif triplet[1] == "inDepartement":
-                loc = Classes["Localisation"](triplet[0])
-                canton = Classes["Departement"](triplet[2])
+                loc = get_class(onto, "Localisation")(triplet[0])
+                canton = get_class(onto, "Departement")(triplet[2])
                 canton.inDepartement = [loc]
 
 
@@ -196,11 +181,8 @@ def triple_to_owl(tab):
     une fonction qui va transformer le contenu html_to_triple
     en structure dans un premier temps puis crée des triplets
     """
-    onto = get_ontology("ontology_v2.owl")
-    Classes = get_classes(onto)
-    define_properties(onto, Classes)
+    onto = get_ontology_from_file("ontology_v3.owl")
+    define_properties(onto)
     tab_type = create_table_of_type(tab)
-    create_instance_and_relation(tab, Classes, tab_type)
+    create_instance_and_relation(onto, tab, tab_type)
     onto.save(file="final.owl", format="rdfxml")
-
-

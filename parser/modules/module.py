@@ -4,8 +4,8 @@ from modules.network import *
 from modules.location_parser import *
 
 
-def get_object_callables():
-    for callable_element in dir(onto):
+def get_object_callables(obj):
+    for callable_element in dir(obj):
         if callable_element[:1] != "_":
             print(callable_element)
 
