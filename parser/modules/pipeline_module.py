@@ -3,6 +3,18 @@ import subprocess
 from modules.module import *
 
 
+def get_subject(triplet):
+    return triplet[0]
+
+
+def get_link(triplet):
+    return triplet[1]
+
+
+def get_goal(triplet):
+    return triplet[2]
+
+
 def get_class(onto, name):
     """
     is a function that get the class object
@@ -30,12 +42,35 @@ def docx_to_html(name):
     return new_name
 
 
-def html_to_triple(file_name):
-    text = open(file_name, "r").readlines()
-    # text = ["<p><em>Passeiry (CH, ct. Genève, com. Chancy)</em>, <em>Passeyrier</em>, 167</p>"]
+def develop_structure(structure):
+    final = []
+    for element in structure:
+        if get_type(element) == "voir":
+            for subelement in element[0][0]:
+                final.append([subelement, "voir"])
+        elif get_type(element) == "persons":
+            for subelement in element[0]:
+                final.append(subelement)
+        elif get_type(element) == "place" and "(" in get_value(element):
+            table_place = place([[get_value(element)]])
+            if len(table_place) > 0:
+                # enlever la liste vide à la fin de la liste
+                table_place.pop()
+                for place_element in table_place:
+                    if place_element != []:
+                        final.append([place_element[0], place_element[1]])
+        else:
+            final.append(element)
+    return final
 
-    # ignor = True
-    ignor = False
+
+def html_to_triple(file_name):
+    """After the html index is generated, we can access his datas"""
+    text = open(file_name, "r").readlines()
+    # text = [text[12-1]]
+
+    ignor = True
+    # ignor = False
     tab = []
     """
     Le fichier index contient du texte d'explication sur la structure de l'index
@@ -50,19 +85,20 @@ def html_to_triple(file_name):
             if ignor is False and not containsH5(line):
                 res = parser.parse(line)
                 if res is not None:
+                    res = develop_structure(res)
                     tab.append(createTriplet(res))
     return tab
 
 
 def getType(onto, element, tab_type):
     for triplet in tab_type:
-        if element == triplet[0]:
-            if triplet[2] == "person":
-                return get_class(onto, "Nom")(triplet[0].replace(" ( d ’ )", ""))
-            elif triplet[2] == "place":
-                return get_class(onto, "Location")(triplet[0])
-            elif triplet[2] == "page":
-                return get_class(onto, "Page")(triplet[0].replace(" ", ""))
+        if element == get_subject(triplet):
+            if get_goal(triplet) == "Nom":
+                return get_class(onto, "Nom")(get_subject(triplet).replace(" ( d ’ )", ""))
+            elif get_goal(triplet) == "Localisation":
+                return get_class(onto, "Localisation")(get_subject(triplet))
+            elif get_goal(triplet) == "Page":
+                return get_class(onto, "Page")(get_subject(triplet).replace(" ", ""))
     return None
 
 """
@@ -141,39 +177,64 @@ def create_table_of_type(tab):
     return tab
 
 
+def create_class_type(onto, triplet):
+    """link classes to corresponding names"""
+    if get_goal(triplet) == "person":
+        get_class(onto, "Nom")(get_subject(triplet).replace(" ( d ’ )", ""))
+    elif get_goal(triplet) == "place":
+        get_class(onto, "Localisation")(get_subject(triplet))
+    elif get_goal(triplet) == "page":
+        get_class(onto, "Page")(get_subject(triplet).replace(" ", ""))
+
+
+def get_class_from_instance(onto, instance):
+    res = None
+    if hasattr(onto, instance):
+        if getattr(onto, instance) is not None:
+            res = getattr(onto, instance)
+            print(dir(res))
+    return res
+
+
+def create_page_relation(onto, triplet):
+    Any = get_class_from_instance(onto, get_subject(triplet))
+    # Any = getType(onto, get_subject(triplet), tab_type)
+    page = get_class(onto, "Page")(get_goal(triplet))
+    if Any is not None:
+        Any.inPage = [page]
+
+
+def create_relation(onto, triplet):
+    # relation creator
+    link = get_link(triplet)
+    python_class_of_the_link = getattr(onto, link)
+    class1 = python_class_of_the_link.domain[0].name
+    class2 = python_class_of_the_link.range[0].name
+    element1 = get_class(onto, class1)(get_subject(triplet))
+    element2 = get_class(onto, class2)(get_goal(triplet))
+    setattr(element1, link, [element2])
+
+
+def exist_in_ontology(onto, element):
+    res = False
+    if hasattr(onto, element):
+        if getattr(onto, element) is not None:
+            res = True
+    return res
+
+
 # 1 TODO refactor create_instance_and_relation to simplify the creation processus
-def create_instance_and_relation(onto, tab, tab_type):
+def create_instance_and_relation(onto, tab):
     # création des instances et des relations
     for ligne in tab:
         for triplet in ligne:
-            if triplet[1] == "type":
-                if triplet[2] == "person":
-                    get_class(onto, "Nom")(triplet[0].replace(" ( d ’ )", ""))
-                elif triplet[2] == "place":
-                    get_class(onto, "Localisation")(triplet[0])
-                elif triplet[2] == "page":
-                    get_class(onto, "Page")(triplet[0].replace(" ", ""))
-            elif triplet[1] == "page":
-                Any = getType(onto, triplet[0], tab_type)
-                page = get_class(onto, "Page")(triplet[2])
-                if Any is not None:
-                    Any.inPage = [page]
-            elif triplet[1] == "inCanton":
-                loc = get_class(onto, "Localisation")(triplet[0])
-                canton = get_class(onto, "Canton")(triplet[2])
-                canton.inCanton = [loc]
-            elif triplet[1] == "inCommune":
-                loc = get_class(onto, "Localisation")(triplet[0])
-                canton = get_class(onto, "Commune")(triplet[2])
-                canton.inCommune = [loc]
-            elif triplet[1] == "inCountry":
-                loc = get_class(onto, "Localisation")(triplet[0])
-                canton = get_class(onto, "Pays")(triplet[2])
-                canton.inCountry = [loc]
-            elif triplet[1] == "inDepartement":
-                loc = get_class(onto, "Localisation")(triplet[0])
-                canton = get_class(onto, "Departement")(triplet[2])
-                canton.inDepartement = [loc]
+            if get_link(triplet) == "type":
+                if exist_in_ontology(onto, get_goal(triplet)):
+                    get_class(onto, get_goal(triplet))(get_subject(triplet).replace(" ( d ’ )", ""))
+            elif get_link(triplet) == "Page":
+                create_page_relation(onto, triplet)
+            elif exist_in_ontology(onto, get_link(triplet)):
+                create_relation(onto, triplet)
 
 
 def triple_to_owl(tab):
@@ -181,8 +242,8 @@ def triple_to_owl(tab):
     une fonction qui va transformer le contenu html_to_triple
     en structure dans un premier temps puis crée des triplets
     """
+    # tab = [[["Gregory", "type", "Personne"], ["Gregory", "Page", "322"]]]
     onto = get_ontology_from_file("ontology_v3.owl")
     define_properties(onto)
-    tab_type = create_table_of_type(tab)
-    create_instance_and_relation(onto, tab, tab_type)
+    create_instance_and_relation(onto, tab)
     onto.save(file="final.owl", format="rdfxml")
