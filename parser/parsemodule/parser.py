@@ -175,7 +175,10 @@ def p_parenthese(p):
                   | SSB parenthesecontents ESB
                   | SPA voirs EPA
                   '''
-    p[0] = " ".join(p[1:])
+    if isinstance(p[2], list):
+        p[0] = "("+str(p[2])+")"
+    else:
+        p[0] = " ".join(p[1:])
 
 
 def p_parenthesecontents(p):
@@ -198,6 +201,7 @@ def p_parenthesecontent(p):
                          | SEP
                          | MINUS
                          | APOSTROPHE
+                         | NUMBER
                         '''
     p[0] = p[1]
 

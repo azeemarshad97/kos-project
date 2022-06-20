@@ -3,6 +3,20 @@ import subprocess
 from modules.module import *
 
 
+def corrector(line):
+    """correct incosistencies from the html file"""
+    line = line.replace(" ", " ")
+    line = line.replace(",</span>", "</span>,")
+    line = line.replace(", P</span>ierre","</span>, Pierre")
+    line = line.replace('A<span class="smallcaps">','<span class="smallcaps">A')
+    line = line.replace("0 0", "00")
+    line = line.replace('<span class="smallcaps">, 271</span>', '')
+    line = line.replace('<span class="smallcaps">, 197-198</span>', '')
+    line = line.replace('<span class="smallcaps">, 412</span>', '')
+    line = line.replace('Arlod (d’), Arlod(z) (d’), Arlo(z) (d’), Darlodz</span>', 'Arlod (d’)</span>, Arlod(z) (d’), Arlo(z) (d’), Darlodz')
+    return line
+
+
 def get_subject(triplet):
     return triplet[0]
 
@@ -64,10 +78,17 @@ def develop_structure(structure):
     return final
 
 
+def is_valide_line(line):
+    res = True
+    if "blockquote>" in line or "<p>-" in line or "<p>—" in line or 'caps">—' in line:
+        res = False
+    return res
+
+
 def html_to_triple(file_name):
     """After the html index is generated, we can access his datas"""
     text = open(file_name, "r").readlines()
-    # text = [text[12-1]]
+    failed_lines = open("failed.html", "w")
 
     ignor = True
     # ignor = False
@@ -83,10 +104,14 @@ def html_to_triple(file_name):
             ignor = False
         else:
             if ignor is False and not containsH5(line):
-                res = parser.parse(line)
+                res = parser.parse(corrector(line))
                 if res is not None:
                     res = develop_structure(res)
                     tab.append(createTriplet(res))
+                else:
+                    if is_valide_line(line):
+                        failed_lines.write(line)
+    failed_lines.close()
     return tab
 
 
@@ -192,7 +217,6 @@ def get_class_from_instance(onto, instance):
     if hasattr(onto, instance):
         if getattr(onto, instance) is not None:
             res = getattr(onto, instance)
-            print(dir(res))
     return res
 
 
@@ -242,7 +266,6 @@ def triple_to_owl(tab):
     une fonction qui va transformer le contenu html_to_triple
     en structure dans un premier temps puis crée des triplets
     """
-    # tab = [[["Gregory", "type", "Personne"], ["Gregory", "Page", "322"]]]
     onto = get_ontology_from_file("ontology_v3.owl")
     define_properties(onto)
     create_instance_and_relation(onto, tab)
