@@ -56,7 +56,7 @@ def docx_to_html(name):
     return new_name
 
 
-def develop_structure(structure):
+def unfold_substructures(structure):
     final = []
     for element in structure:
         if get_type(element) == "voir":
@@ -91,7 +91,6 @@ def html_to_triple(file_name):
     failed_lines = open("failed.html", "w")
 
     ignor = True
-    # ignor = False
     tab = []
     """
     Le fichier index contient du texte d'explication sur la structure de l'index
@@ -102,15 +101,14 @@ def html_to_triple(file_name):
         # premièrement, on ignore ce qu'il y a avant h5
         if containsH5(line):
             ignor = False
-        else:
-            if ignor is False and not containsH5(line):
-                res = parser.parse(corrector(line))
-                if res is not None:
-                    res = develop_structure(res)
-                    tab.append(createTriplet(res))
-                else:
-                    if is_valide_line(line):
-                        failed_lines.write(line)
+        elif ignor is False and not containsH5(line):
+            res = parser.parse(corrector(line))
+            if res is not None:
+                res = unfold_substructures(res)
+                tab.append(createTriplet(res))
+            else:
+                if is_valide_line(line):
+                    failed_lines.write(line)
     failed_lines.close()
     return tab
 
@@ -270,3 +268,4 @@ def triple_to_owl(tab):
     define_properties(onto)
     create_instance_and_relation(onto, tab)
     onto.save(file="final.owl", format="rdfxml")
+
