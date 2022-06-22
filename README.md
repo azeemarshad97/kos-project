@@ -30,6 +30,12 @@ assembling related text fragments
     ```
 4. open the link given in the terminal
 
+### Parser
+In addition to the requirements.txt file above, to run the parser, pandoc is required 
+```bash
+pip install pandoc
+```
+
 ### Tools
 ...
 
