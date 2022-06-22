@@ -1,10 +1,9 @@
+# Exemples de parsing (ne fait pas parti du processus de parsing)
 france = [['Yvoire ( F , dép. Haute-Savoie , arr. Thonon-les-Bains , ct. Sciez )', 'place'], ['Yvoy ( es ) re', 'place'], ['le seigneur de -', 'descriptions'], [[[['Saint-Jeoire ( de )', 'descriptions'], 'person']], 'voir']]
-
 suisse = [['Appenzell , ( CH , ct. )', 'place'], ['Apensept', 'place']]
-
 suisse2 = [['Chambésy , ( CH , ct. Vaud , distr. Nyon )', 'place'], ['Carroge', 'place']]
-
 autre = [['Mategnin ( CH , ct. Genève , com. Meyrin )']]
+
 
 def place(element):
     place_parsed = []
@@ -80,6 +79,7 @@ def place(element):
     return place_parsed
 
 
+# exemple d'utilisation
 # print(place(france))
 # print(place(suisse2))
 # print(place(autre))

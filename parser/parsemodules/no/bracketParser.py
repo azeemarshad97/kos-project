@@ -1,6 +1,6 @@
 import ply.yacc as yacc
 from parsemodule.lexer import *
-from modules.tools import treduce, tplus, tparselist, ttolist
+# from modules.tools import treduce, tplus, tparselist, ttolist
 from modules.open_and_format import open_and_format, open_and_format2
 
 # parser number two

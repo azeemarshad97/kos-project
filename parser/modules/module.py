@@ -1,7 +1,5 @@
-# from tools import tcreateTriplet
-from parsemodule.parser import *
-from modules.network import *
-from modules.location_parser import *
+from parsemodules.parser import *
+from parsemodules.location_parser import *
 
 
 def get_value(element):

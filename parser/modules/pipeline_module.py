@@ -48,16 +48,15 @@ def docx_to_html(name):
     puis le transforme en html
     """
     new_name = change_extension(name, "html")
-
-    # conversion en html
-    # TODO uncomment when everything is okay ()
-    # because this conversion is taking a bit of time:
-    # subprocess.run(["pandoc", name, "-o", new_name])
-
+    subprocess.run(f"pandoc {name} -o {new_name}", shell=True)
     return new_name
 
 
 def unfold_substructures(structure):
+    """
+    Cette fonction sert à 'déplier' les structures. En effet une valeur peut être une nouvelle liste
+    Après le passage dans cette fonction, on fini réellement avec une liste de couple valeur-type.
+    """
     final = []
     for element in structure:
         if get_type(element) == "voir":
@@ -69,7 +68,7 @@ def unfold_substructures(structure):
         elif get_type(element) == "Localisation" and "(" in get_value(element):
             table_place = place([[get_value(element)]])
             if len(table_place) > 0:
-                # enlever la liste vide à la fin de la liste
+                # sert à enlever la liste vide à la fin de la liste
                 table_place.pop()
                 for place_element in table_place:
                     if place_element != []:
@@ -235,7 +234,6 @@ def create_page_relation(onto, triplet):
 
 
 def create_relation(onto, triplet):
-    print(triplet)
     if get_link(triplet) not in ["Localisation", "Personne"]:
         # relation creator
         link = get_link(triplet)

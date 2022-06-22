@@ -1,0 +1,16 @@
+@startmindmap
+*[#Yellow] parser
+	*[#3774a8] pipeline.py
+	* ontology_v3.owl
+	*[#White] Index_1543.docx
+	*[#Yellow] parsemodule
+		*[#3774a8] location_parser.py
+		*[#3774a8] lexer.py
+		*[#3774a8] parser.py
+		*[#3774a8] parsetab.py
+	*[#Yellow] modules
+		*[#3774a8] module.py
+		*[#3774a8] open_and_format.py
+		*[#3774a8] pipeline_module.py
+		*[#3774a8] tools.py
+@endmindmap

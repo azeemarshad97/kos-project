@@ -1,6 +1,3 @@
-from modules.network import *
-
-
 def treduce(tab, init, func):
     for el in tab:
         init = func(init, el)
