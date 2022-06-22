@@ -7,8 +7,6 @@ if len(sys.argv) == 1:
 else:
     name = str(sys.argv[1])
 
-print(name)
-
 # 1) docx -> html
 file_name_html = docx_to_html(name)
 
