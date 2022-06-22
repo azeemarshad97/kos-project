@@ -8,6 +8,31 @@
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2022/3/untitled-ontology-33"/>
 
+<owl:ObjectProperty rdf:about="#inPage">
+  <rdfs:domain rdf:resource="#Nom"/>
+  <rdfs:range rdf:resource="#_Localisation"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#inCanton">
+  <rdfs:domain rdf:resource="#_Localisation"/>
+  <rdfs:range rdf:resource="#Canton"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#inCommune">
+  <rdfs:domain rdf:resource="#_Localisation"/>
+  <rdfs:range rdf:resource="#Commune"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#inCountry">
+  <rdfs:domain rdf:resource="#_Localisation"/>
+  <rdfs:range rdf:resource="#_Pays"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#inDepartement">
+  <rdfs:domain rdf:resource="#_Localisation"/>
+  <rdfs:range rdf:resource="#Departement"/>
+</owl:ObjectProperty>
+
 <owl:Class rdf:about="#Armee">
   <rdfs:subClassOf rdf:resource="#_Etatique"/>
 </owl:Class>
@@ -27,6 +52,8 @@
 <owl:Class rdf:about="#_Terre">
   <rdfs:subClassOf rdf:resource="#_Localisation"/>
 </owl:Class>
+
+<owl:Class rdf:about="#_Localisation"/>
 
 <owl:Class rdf:about="#Clerge">
   <rdfs:subClassOf rdf:resource="#_Occupation"/>
@@ -112,8 +139,6 @@
   <rdfs:subClassOf rdf:resource="#GroupeSocial"/>
 </owl:Class>
 
-<owl:Class rdf:about="#_Localisation"/>
-
 <owl:Class rdf:about="#_Page"/>
 
 <owl:Class rdf:about="#_Pays">
@@ -123,4 +148,6 @@
 <owl:Class rdf:about="#_PointEau">
   <rdfs:subClassOf rdf:resource="#_Localisation"/>
 </owl:Class>
+
+
 </rdf:RDF>

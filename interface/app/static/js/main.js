@@ -1,10 +1,17 @@
-function callPythonToRunQueryResult(){
+function callPythonToRunQueryResult()
+/* This is a JavaScript function that is called when the user
+clicks the "Run Query" button. It gets the value of the
+textarea with the id "input-query" and passes it to the Python
+function "display_result" which is defined in the file
+"main.py". */
+{
     var query = document.getElementById("input-query").value;
     eel.display_result(query)
 }
 
 
 function insertTab(o, e)
+/* A function that allows the user to press the tab key to insert a tab character. */
 {
 	var kC = e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which;
 	if (kC == 9 && !e.shiftKey && !e.ctrlKey && !e.altKey)
