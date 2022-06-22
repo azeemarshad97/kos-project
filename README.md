@@ -11,6 +11,25 @@ assembling related text fragments
 • Texts (transcribed manuscripts)
 • Structured Index (people, place, event)
 
+### How to run interface
+0. Locate yourself in the interface folder 
+   ```bash 
+   cd ./interface
+   ```
+1. preferably, install a virtual environement, for example
+    ```bash
+    python -m venv venv
+    ```
+2. locate yourself in the interface folder, and install the requirements 
+    ```bash
+     pip install -r requirements.txt  
+     ```
+3. run 
+    ```bash
+    flask run 
+    ```
+4. open the link given in the terminal
+
 ### Tools
 ...
 

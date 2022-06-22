@@ -7,6 +7,9 @@ IMAGES = {}
 
 
 def getImages():
+    """
+    It opens the csv file, reads it, and puts the contents into a dictionary.
+    """
     try:
         with open("logo.csv") as f:
             reader = csv.reader(f)
@@ -18,6 +21,10 @@ def getImages():
 
 
 def getRandomColor():
+    """
+    It generates a random color in hexadecimal format.
+    :return: A random color in hexadecimal format.
+    """
     random_number = random.randint(0, 16777215)
     hex_number = str(hex(random_number))
     hex_number = '#'+hex_number[2:]
@@ -25,14 +32,36 @@ def getRandomColor():
 
 
 def getColumn(num, mylist):
+    """
+    It takes a list of lists and returns a list of the values in the column specified by the second
+    argument
+    
+    :param num: the column number you want to get
+    :param mylist: the list of lists
+    :return: A list of the values in the column of the list.
+    """
     return [x[num] for x in mylist]
 
 
 def unique(mylist):
+    """
+    It takes a list as input, converts it to a set, and then returns a list of the unique elements in
+    the original list
+    
+    :param mylist: the list you want to make unique
+    :return: A list of unique elements from the list mylist.
+    """
     return list(set(mylist))
 
 
 def addNodes(net, facts):
+    """
+    It takes a network and a list of facts, and adds nodes to the network for each unique node in the
+    facts
+    
+    :param net: the networkx graph object
+    :param facts: a list of lists, each sublist is a fact
+    """
     nodeList = unique(getColumn(0, facts)+getColumn(2, facts))
     for n in nodeList:
         default = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd5%2FRond_bleu_ciel.png%2F120px-Rond_bleu_ciel.png&f=1&nofb=1"
@@ -41,6 +70,13 @@ def addNodes(net, facts):
 
 
 def addEdges(net, facts):
+    """
+    It adds edges to the network, and assigns a color to each edge type
+    
+    :param net: the networkx graph object
+    :param facts: a list of facts, each fact being a list of 3 elements: the first element is the source
+    node, the second element is the edge label, and the third element is the target node
+    """
     # on crée un dictionnaire qui assignera à chaque type de noeud une couleur
     d = {}
     uniqueLinks = unique(getColumn(1, facts))
@@ -51,6 +87,13 @@ def addEdges(net, facts):
 
 
 def displayNetwork(tab):
+    """
+    It takes a dataframe as input, creates a network object, adds nodes and edges to the network object,
+    and then returns the html code for the network.
+    
+    :param tab: a list of lists, each sublist is a list of nodes and edges
+    :return: The html code for the network.
+    """
     getImages()
     net = Network(
         bgcolor='#FFFFFF',

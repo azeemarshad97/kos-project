@@ -18,6 +18,7 @@ body {
 
 
 
+/* Styling the navbar, the submit query button, and the table. */
 #nav1 {
     background-color: #F00;
     /*whichever you want*/
@@ -54,6 +55,7 @@ body {
     justify-content: center;
 }
 
+/* A CSS code that is used to style the table. */
 #table-container {
     flex-grow: 1;
     flex-basis: 0;
@@ -87,6 +89,7 @@ table td.expand {
     width: 99%
 }
 
+/* Making the footer stick to the bottom of the page. */
 html,
 body {
     padding: 0;
