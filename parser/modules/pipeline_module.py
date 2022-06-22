@@ -245,7 +245,6 @@ def exist_in_ontology(onto, element):
     return res
 
 
-# 1 TODO refactor create_instance_and_relation to simplify the creation processus
 def create_instance_and_relation(onto, tab):
     # création des instances et des relations
     for ligne in tab:
