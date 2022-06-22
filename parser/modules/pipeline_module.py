@@ -36,6 +36,7 @@ def get_class(onto, name):
     """
     results = onto.search(iri="*"+name)
     if len(results) == 0:
+        print("Erreur: le triplet indique une classe qui n'existe pas")
         return None
     else:
         return results[0]
@@ -65,7 +66,7 @@ def unfold_substructures(structure):
         elif get_type(element) == "persons":
             for subelement in element[0]:
                 final.append(subelement)
-        elif get_type(element) == "place" and "(" in get_value(element):
+        elif get_type(element) == "Localisation" and "(" in get_value(element):
             table_place = place([[get_value(element)]])
             if len(table_place) > 0:
                 # enlever la liste vide à la fin de la liste
@@ -226,21 +227,30 @@ def create_page_relation(onto, triplet):
         Any.inPage = [page]
 
 
+# def get_class_of_the_link(onto, link):
+    # val = getattr(onto, link)
+    # if val is None:
+        # val = getattr(onto, "_"+link)
+    # return val
+
+
 def create_relation(onto, triplet):
-    # relation creator
-    link = get_link(triplet)
-    python_class_of_the_link = getattr(onto, link)
-    class1 = python_class_of_the_link.domain[0].name
-    class2 = python_class_of_the_link.range[0].name
-    element1 = get_class(onto, class1)(get_subject(triplet))
-    element2 = get_class(onto, class2)(get_goal(triplet))
-    setattr(element1, link, [element2])
+    print(triplet)
+    if get_link(triplet) not in ["Localisation", "Personne"]:
+        # relation creator
+        link = get_link(triplet)
+        python_class_of_the_link = getattr(onto, link)
+        class1 = python_class_of_the_link.domain[0].name
+        class2 = python_class_of_the_link.range[0].name
+        element1 = get_class(onto, class1)(get_subject(triplet))
+        element2 = get_class(onto, class2)(get_goal(triplet))
+        setattr(element1, link, [element2])
 
 
 def exist_in_ontology(onto, element):
     res = False
     if hasattr(onto, element):
-        if getattr(onto, element) is not None:
+        if getattr(onto, element) is not None or getattr(onto, "_"+element) is not None:
             res = True
     return res
 
@@ -251,7 +261,8 @@ def create_instance_and_relation(onto, tab):
         for triplet in ligne:
             if get_link(triplet) == "type":
                 if exist_in_ontology(onto, get_goal(triplet)):
-                    get_class(onto, get_goal(triplet))(get_subject(triplet).replace(" ( d ’ )", ""))
+                    corresponding_class = get_class(onto, get_goal(triplet))
+                    instance = corresponding_class(get_subject(triplet).replace(" ( d ’ )", ""))
             elif get_link(triplet) == "Page":
                 create_page_relation(onto, triplet)
             elif exist_in_ontology(onto, get_link(triplet)):
